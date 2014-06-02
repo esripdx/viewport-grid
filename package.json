@@ -1,0 +1,12 @@
+{
+  "name": "Static Site Boilerplate",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Boilerplate for Grunt Based static sites",
+  // "repository": "https://github.com/your/repo",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-tasks": "^0.4.0"
+  }
+}
