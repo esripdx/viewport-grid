@@ -1,12 +1,23 @@
 {
-  "name": "Static Site Boilerplate",
+  "name": "viewport-grid",
   "private": true,
   "version": "0.0.0",
   "description": "Boilerplate for Grunt Based static sites",
-  // "repository": "https://github.com/your/repo",
+  "repository": "https://github.com/esripdx/viewport-grid",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
-    "load-grunt-tasks": "^0.4.0"
+    "load-grunt-tasks": "^0.4.0",
+    "assemble": "~0.4.37",
+    "grunt-sass": "~0.12.1",
+    "grunt-gh-pages": "~0.9.1",
+    "grunt-newer": "~0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-contrib-cssmin": "~0.9.0",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-connect": "~0.7.1",
+    "grunt-contrib-imagemin": "~0.7.1"
   }
 }
