@@ -1,2 +1,19 @@
+# Mac
+.DS_Store
+
+# SublimeText
+*.sublime-project
+*.sublime-workspace
+
+# SASS
+.sass-cache
+
+# node
 node_modules
-*/node_modules
+.grunt
+
+# Bower
+bower_components/
+
+# project specific
+docs/build

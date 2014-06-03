@@ -1,0 +1,14 @@
+// Import Microsite Styles
+@import 'base/config';
+@import 'base/reset';
+@import 'base/type';
+@import 'base/buttons';
+
+// Viewport Grid Imports
+@import '../../../lib/imports';
+
+$red: #880000;
+
+h1 {
+  color: $red;
+}
