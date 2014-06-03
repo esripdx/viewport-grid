@@ -27,6 +27,6 @@ $small-column-breakpoint:  $small   !default;
 $small-column-gutter:      1rem     !default;
 
 // Fallback Config
-$ie8-support:              $false   !default;
+$ie8-support:              false    !default;
 $column-gutter-fallback:   20px     !default;
 $container-width-fallback: 960px    !default;
