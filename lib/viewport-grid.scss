@@ -1,9 +1,5 @@
-// Config Options
-@import "config";
-
-// Base Modules
-@import "base/classes";
-@import "base/mixins";
+// Imports
+@import "imports";
 
 // Grid Modules
 @import "grid/columns";
