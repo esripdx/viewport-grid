@@ -11,12 +11,6 @@
 // Modules
 @import 'modules/woodblocks';
 
-$red: #880000;
-
-h1 {
-  color: $red;
-}
-
 .color-block-test {
   display: inline-block;
   position: absolute;
@@ -24,7 +18,59 @@ h1 {
   left: 25vw;
   height: 100vh;
   margin: auto;
-  background-color: blue;
-
+  background-color: rgba(cyan, 0.95);
+  z-index: 0;
   @include woodblock('7');
+}
+
+.color-block-two {
+  display: inline-block;
+  position: absolute;
+  width: 50vw;
+  left: 30vw;
+  top: 10vh;
+  height: 90vh;
+  margin: auto;
+  background-color: rgba(magenta, 0.8);
+  z-index: 0;
+  @include woodblock('8');
+}
+
+.color-block-three {
+  display: inline-block;
+  position: absolute;
+  width: 40vw;
+  left: 10vw;
+  top: 50vh;
+  height: 30vh;
+  margin: auto;
+  background-color: rgba(yellow, 0.4);
+  z-index: 0;
+  @include woodblock('3');
+}
+
+.title-block {
+  position: absolute;
+  left: 13vw;
+  top: 14vh;
+  @extend %Oswald;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 4rem;
+  padding: 0.5em;
+  border: 8px solid black;
+  z-index: 1;
+
+  @include woodblock('5');
+}
+
+.project-description {
+  position: absolute;
+  right: 5vw;
+  top: 54vh;
+  font-size: 2rem;
+  width: 24em;
+  @extend %SourceLight;
+  padding-bottom: 2em;
+  border-bottom: 8px solid black;
 }

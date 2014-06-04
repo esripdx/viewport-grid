@@ -40,8 +40,25 @@ audio:not([controls]) {
 svg:not(:root) {
   overflow: hidden; }
 
-h1 {
-  color: #880000; }
+.title-block {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-style: normal; }
+
+.title-block em, .title-block strong {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-style: normal; }
+
+.project-description {
+  font-family: "Source Code Pro", "Inconsolata", "Consolas", "Courier New", monospace;
+  font-weight: 300;
+  font-style: normal; }
+
+.project-description em, .project-description strong {
+  font-family: "Source Code Pro", "Inconsolata", "Consolas", "Courier New", monospace;
+  font-weight: 400;
+  font-style: normal; }
 
 .color-block-test {
   display: inline-block;
@@ -50,8 +67,63 @@ h1 {
   left: 25vw;
   height: 100vh;
   margin: auto;
-  background-color: blue;
+  background-color: rgba(0, 255, 255, 0.95);
+  z-index: 0;
   -webkit-mask: url(/img/woodblocks/7.png) no-repeat center center;
   -webkit-mask-size: cover;
   mask: url(/img/woodblocks/7.png) no-repeat center center;
   mask-size: cover; }
+
+.color-block-two {
+  display: inline-block;
+  position: absolute;
+  width: 50vw;
+  left: 30vw;
+  top: 10vh;
+  height: 90vh;
+  margin: auto;
+  background-color: rgba(255, 0, 255, 0.8);
+  z-index: 0;
+  -webkit-mask: url(/img/woodblocks/8.png) no-repeat center center;
+  -webkit-mask-size: cover;
+  mask: url(/img/woodblocks/8.png) no-repeat center center;
+  mask-size: cover; }
+
+.color-block-three {
+  display: inline-block;
+  position: absolute;
+  width: 40vw;
+  left: 10vw;
+  top: 50vh;
+  height: 30vh;
+  margin: auto;
+  background-color: rgba(255, 255, 0, 0.4);
+  z-index: 0;
+  -webkit-mask: url(/img/woodblocks/3.png) no-repeat center center;
+  -webkit-mask-size: cover;
+  mask: url(/img/woodblocks/3.png) no-repeat center center;
+  mask-size: cover; }
+
+.title-block {
+  position: absolute;
+  left: 13vw;
+  top: 14vh;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 4rem;
+  padding: 0.5em;
+  border: 8px solid black;
+  z-index: 1;
+  -webkit-mask: url(/img/woodblocks/5.png) no-repeat center center;
+  -webkit-mask-size: cover;
+  mask: url(/img/woodblocks/5.png) no-repeat center center;
+  mask-size: cover; }
+
+.project-description {
+  position: absolute;
+  right: 5vw;
+  top: 54vh;
+  font-size: 2rem;
+  width: 24em;
+  padding-bottom: 2em;
+  border-bottom: 8px solid black; }
