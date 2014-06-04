@@ -22,9 +22,16 @@ module.exports = function(grunt) {
           nospawn: true
         }
       },
+      site: {
+        files: ['site/source/**/*.scss'],
+        tasks: ['sass:site'],
+        options: {
+          nospawn: true
+        }
+      },
       assemble: {
         files: ['site/source/**/*.md', 'site/source/**/*.hbs'],
-        tasks: ['newer:assemble'],
+        tasks: ['assemble'],
         options: {
           nospawn: true
         }
@@ -78,7 +85,7 @@ module.exports = function(grunt) {
           cwd: 'site/source/pages',
           dest: 'site/build',
           expand: true,
-          src: ['**/*.hbs']
+          src: ['**/*.hbs', '**/*.md']
         }]
       }
     }

@@ -42,3 +42,16 @@ svg:not(:root) {
 
 h1 {
   color: #880000; }
+
+.color-block-test {
+  display: inline-block;
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  height: 100vh;
+  margin: auto;
+  background-color: blue;
+  -webkit-mask: url(/img/woodblocks/7.png) no-repeat center center;
+  -webkit-mask-size: cover;
+  mask: url(/img/woodblocks/7.png) no-repeat center center;
+  mask-size: cover; }

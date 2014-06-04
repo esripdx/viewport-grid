@@ -8,8 +8,23 @@
 // Viewport Grid Imports
 @import '../../../lib/imports';
 
+// Modules
+@import 'modules/woodblocks';
+
 $red: #880000;
 
 h1 {
   color: $red;
+}
+
+.color-block-test {
+  display: inline-block;
+  position: absolute;
+  width: 50vw;
+  left: 25vw;
+  height: 100vh;
+  margin: auto;
+  background-color: blue;
+
+  @include woodblock('7');
 }
