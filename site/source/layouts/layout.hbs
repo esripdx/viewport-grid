@@ -1,6 +1,5 @@
 {{>header}}
-  <div class="page-content">
-    <h2>{{ this.page.title }}</h2>
+  <div class="page-content {{ this.page.slug }}">
     {{#markdown}}
       {{> body}}
     {{/markdown}}
