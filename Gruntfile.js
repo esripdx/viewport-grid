@@ -22,9 +22,23 @@ module.exports = function(grunt) {
           nospawn: true
         }
       },
+      js: {
+        files: ['site/source/js/*.js'],
+        tasks: ['jshint', 'concat'],
+        options: {
+          nospawn: true
+        }
+      },
+      img: {
+        files: ['site/source/img/**/*.{png,jpg,svg}'],
+        tasks: ['newer:imagemin'],
+        options: {
+          nospawn: true
+        }
+      },
       assemble: {
         files: ['site/source/**/*.md', 'site/source/**/*.hbs'],
-        tasks: ['newer:assemble'],
+        tasks: ['assemble'],
         options: {
           nospawn: true
         }
@@ -67,9 +81,34 @@ module.exports = function(grunt) {
       }
     },
 
+    'jshint': {
+      files: [
+        'site/source/js/*.js',
+      ]
+    },
+
+    'concat': {
+      docs: {
+        src: ['site/source/js/*.js'],
+        dest: 'site/build/js/script.js'
+      }
+    },
+
+    'imagemin': {
+      docs: {
+        files: [{
+          expand: true,
+          cwd: 'source/img',
+          src: ['**/*.{png,jpg,svg}'],
+          dest: 'site/build/img/'
+        }]
+      }
+    },
+
     'assemble': {
       options: {
         layout: 'layout.hbs',
+        assets: 'site/build/',
         layoutdir: 'site/source/layouts/',
         partials: 'site/source/partials/**/*.hbs'
       },
@@ -78,7 +117,7 @@ module.exports = function(grunt) {
           cwd: 'site/source/pages',
           dest: 'site/build',
           expand: true,
-          src: ['**/*.hbs']
+          src: ['**/*.hbs', '**/*.md']
         }]
       }
     }
@@ -88,5 +127,5 @@ module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt, {pattern: ['grunt-*', 'assemble']});
 
   // Default grunt task
-  grunt.registerTask('default', ['assemble', 'sass', 'cssmin', 'connect', 'watch' ]);
+  grunt.registerTask('default', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'connect', 'watch' ]);
 };

@@ -16,4 +16,4 @@ node_modules
 bower_components/
 
 # project specific
-docs/build
+site/build
