@@ -69,9 +69,9 @@ svg:not(:root) {
   margin: auto;
   background-color: rgba(0, 255, 255, 0.95);
   z-index: 0;
-  -webkit-mask: url(/img/woodblocks/7.png) no-repeat center center;
+  -webkit-mask: url(/img/woodblocks/2.png) no-repeat center center;
   -webkit-mask-size: cover;
-  mask: url(/img/woodblocks/7.png) no-repeat center center;
+  mask: url(/img/woodblocks/2.png) no-repeat center center;
   mask-size: cover; }
 
 .color-block-two {

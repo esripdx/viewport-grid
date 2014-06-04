@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       },
       assemble: {
         files: ['site/source/**/*.md', 'site/source/**/*.hbs'],
-        tasks: ['assemble'],
+        tasks: ['newer:assemble'],
         options: {
           nospawn: true
         }
