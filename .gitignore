@@ -17,3 +17,6 @@ bower_components/
 
 # project specific
 docs/build
+
+#static site built files
+site/build/
