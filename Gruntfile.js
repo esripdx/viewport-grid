@@ -22,6 +22,13 @@ module.exports = function(grunt) {
           nospawn: true
         }
       },
+      sitesass: {
+        files: ['site/**/*.scss'],
+        tasks: ['sass'],
+        options: {
+          nospawn: true
+        }
+      },
       js: {
         files: ['site/source/js/*.js'],
         tasks: ['jshint', 'concat'],

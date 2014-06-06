@@ -11,6 +11,25 @@
 // Viewport Grid Imports
 @import '../../../lib/imports';
 
+body {
+  background: url(../img/bg-test.svg) center center;
+  background-size: 2.66666666vw;
+}
+
+
+.grid-example [class*="column-"] {
+  span {
+    width: 100%;
+    display: block;
+    background-color: $lightest-gray;
+    font-family: $source;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+
 .color-block-test {
   display: inline-block;
   position: absolute;

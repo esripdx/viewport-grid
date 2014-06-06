@@ -16,3 +16,55 @@
     @content;
   }
 }
+
+// Box-sizing mixin
+@mixin box-sizing($value) {
+  -webkit-box-sizing: $value;
+     -moz-box-sizing: $value;
+          box-sizing: $value;
+}
+
+// Clearfix Mixin
+@mixin clearfix() {
+  @extend %clearfix;
+}
+
+// Respond To
+@mixin respond-to($type, $m: max-width) {
+  @media screen and ($m: $type) {
+    @content;
+  }
+}
+
+// Column Mixin
+@mixin column($n) {
+  @extend %column-base;
+  width: ($n / $large-column-count) * $container-width - .01vw;
+  max-width: ($n / $large-column-count) * $large-column-max;
+}
+
+// Column Width Mixin
+@mixin column-width($n) {
+  width: ($n / $large-column-count) * $container-width - .01vw;
+  max-width: ($n / $large-column-count) * $large-column-max;
+}
+
+// Hide
+@mixin show() {
+  visibility: visible;
+}
+
+// Show
+@mixin hide() {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Grid Pre
+@mixin pre($n, $count: $large-column-count) {
+  margin-left: ($n / $count) * $container-width - .01vw;
+}
+
+@mixin post($n, $count: $large-column-count) {
+  margin-right: ($n / $count) * $container-width - .01vw;
+}
