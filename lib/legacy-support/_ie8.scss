@@ -1,0 +1,34 @@
+// Fixed Grid for ie8
+@mixin ie8-support(){
+  $adjusted-container: $container-width-fallback - $column-gutter-fallback;
+  .ie8 {
+    .container {
+      width: $container-width-fallback;
+    }
+    [class^="column-"] {
+      @include box-sizing(content-box);
+      width: $container-width-fallback - $column-gutter-fallback;
+      padding: 0 $column-gutter-fallback / 2;
+      [class^="column-"]:first-child {
+        margin-left: -$column-gutter-fallback / 2;
+      }
+      [class^="column-"]:last-child {
+        margin-right: -$column-gutter-fallback / 2;
+      }
+    }
+    @for $n from 1 through $large-column-count {
+      .column-#{$n} {
+        width: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+        > .column-#{$n} {
+          margin-left: -($column-gutter-fallback / 2);
+        }
+      }
+      .pre-#{$n} {
+        margin-left: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+      }
+      .post-#{$n} {
+        margin-right: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+      }
+    }
+  }
+}
