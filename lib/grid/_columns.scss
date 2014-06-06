@@ -23,6 +23,13 @@
   &:last-of-type { @extend %clearfix; }
 }
 
+.column-first {
+  margin-left: -($column-gutter/2);
+}
+.column-last {
+  margin-right: -($column-gutter / 2);
+}
+
 // Large Columns
 @media screen and (min-width: $medium) {
   @for $n from 1 through $large-column-count {
@@ -48,7 +55,15 @@
       width: ($n / $medium-column-count) * $container-width - .01vw;
     }
   }
+  .#{$medium-class}-column-first {
+    margin-left: -($column-gutter / 2);
+  }
+  .#{$medium-class}-column-last {
+    margin-right: -($column-gutter / 2);
+  }
 }
+
+
 
 // Small Columns
 @media screen and (max-width: $small - 1) {
@@ -67,6 +82,12 @@
       width: ($n / $small-column-count) * $container-width - .01vw;
     }
   }
+  .#{$small-class}-column-first {
+    margin-left: -($column-gutter / 2);
+  }
+  .#{$small-class}-column-last {
+    margin-right: -($column-gutter / 2);
+  }
 }
 
 
@@ -77,33 +98,4 @@
 
 @if $ie8-support == true {
   @include ie8-support();
-}
-
-.column-first {
-  margin-left: -($column-gutter-fallback / 2);
-  margin-left: -($column-gutter/2);
-}
-
-.column-last {
-  margin-right: -($column-gutter-fallback / 2);
-  margin-right: -($column-gutter / 2);
-}
-
-.#{$medium-class}-column-first {
-  margin-left: -($column-gutter-fallback / 2);
-  margin-left: -($column-gutter / 2);
-}
-
-.#{$medium-class}-column-last {
-  margin-right: -($column-gutter-fallback / 2);
-  margin-right: -($column-gutter / 2);
-}
-
-.#{$small-class}-column-first {
-  margin-left: -($column-gutter-fallback / 2);
-  margin-left: -($column-gutter / 2);
-}
-.#{$small-class}-column-last {
-  margin-right: -($column-gutter-fallback / 2);
-  margin-right: -($column-gutter / 2);
 }

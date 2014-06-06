@@ -156,50 +156,50 @@ layout: html.hbs
     <p>Contrary to other flexible-width grid systems, the harness grid system's columns do not change behavior when nested. Because the grid is set up with <code>vw</code>, nested columns still span the same width as their non-nested counterparts. Further, clearing of the column-gutter is taken care of for you with <code>:first-child</code> and <code>:last-child</code> psuedo-selectors on all column classes. </p>
   </div>
 
-  <div class="column-18 tablet-8">
+  <div class="column-18 tablet-column-8">
     <span>18/8</span>
 
-    <div class="column-4 tablet-4 first">
+    <div class="column-4 tablet-column-4">
       <span>4/4</span>
-      <div class="column-1 tablet-column-4 first"><span>1/4</span></div>
-      <div class="column-1 tablet-column-4 tablet-first"><span>1/4</span></div>
-      <div class="column-1 tablet-column-4 tablet-first"><span>1/4</span></div>
-      <div class="column-1 tablet-column-4 last tablet-first"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
     </div>
 
-    <div class="column-2 tablet-column-4 tablet-last"><span>2/4</span></div>
+    <div class="column-2 tablet-column-4 tablet-column-last phone-column-first"><span>2/4</span></div>
 
-    <div class="column-10 tablet-8">
+    <div class="column-10 tablet-column-8 tablet-column-first">
       <span>10/8</span>
-      <div class="column-5 tablet-column-4 first">
-        <span>5/4</span>
-      </div>
       <div class="column-5 tablet-column-4">
         <span>5/4</span>
-        <div class="column-2 tablet-column-4 first">
+      </div>
+      <div class="column-5 tablet-column-4 phone-column-first">
+        <span>5/4</span>
+        <div class="column-2 tablet-column-4 phone-column-first">
           <span>2/4</span>
         </div>
-        <div class="column-3 tablet-column-4 last tablet-first">
+        <div class="column-3 tablet-column-4 tablet-column-first phone-column-first">
           <span>3/4</span>
         </div>
 
       </div>
     </div>
 
-    <div class="column-1 tablet-column-4"><span>1/4</span></div>
-    <div class="column-1 tablet-5 last"><span>1/5</span></div>
+    <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+    <div class="column-1 tablet-column-5 tablet-column-first"><span>1/5</span></div>
   </div>
 
-  <div class="column-6 tablet-column-4 nested-demo-2">
+  <div class="column-6 tablet-column-4">
     <span>6/4</span>
 
-    <div class="column-6 tablet-column-4 first">
+    <div class="column-6 tablet-column-4">
       <span>6/4</span>
-      <div class="column-4 tablet-2 first"><span>4/2</span></div>
-      <div class="column-2 tablet-2"><span>2/2</span></div>
+      <div class="column-4 tablet-column-2"><span>4/2</span></div>
+      <div class="column-2 tablet-column-2"><span>2/2</span></div>
     </div>
 
-    <div class="column-4 tablet-column-4 first"><span>4/4</span></div>
+    <div class="column-4 tablet-column-4 column-first tablet-column-first"><span>4/4</span></div>
   </div>
 
 </div>
@@ -235,50 +235,50 @@ The previous example of nested column uses specific classes to override gutter s
 {{/markdown}}
   </div>
 
-  <div class="column-18 tablet-8">
+  <div class="column-18 tablet-column-8">
     <span>18/8</span>
 
-    <div class="column-4 tablet-4">
+    <div class="column-4 tablet-column-4">
       <span>4/4</span>
-      <div class="column-1 tablet-4"><span>1/4</span></div>
-      <div class="column-1 tablet-4"><span>1/4</span></div>
-      <div class="column-1 tablet-4"><span>1/4</span></div>
-      <div class="column-1 tablet-4"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+      <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
     </div>
 
-    <div class="column-2 tablet-4"><span>2/4</span></div>
+    <div class="column-2 tablet-column-4 tablet-column-last phone-column-first"><span>2/4</span></div>
 
-    <div class="column-10 tablet-8">
+    <div class="column-10 tablet-column-8 tablet-column-first">
       <span>10/8</span>
-      <div class="column-5 tablet-4">
+      <div class="column-5 tablet-column-4">
         <span>5/4</span>
       </div>
-      <div class="column-5 tablet-4">
+      <div class="column-5 tablet-column-4 phone-column-first">
         <span>5/4</span>
-        <div class="column-2 tablet-4">
+        <div class="column-2 tablet-column-4 phone-column-first">
           <span>2/4</span>
         </div>
-        <div class="column-3 tablet-4">
+        <div class="column-3 tablet-column-4 tablet-column-first phone-column-first">
           <span>3/4</span>
         </div>
 
       </div>
     </div>
 
-    <div class="column-1 tablet-4"><span>1/4</span></div>
-    <div class="column-1 tablet-5"><span>1/5</span></div>
+    <div class="column-1 tablet-column-4 tablet-column-first"><span>1/4</span></div>
+    <div class="column-1 tablet-column-5 tablet-column-first"><span>1/5</span></div>
   </div>
 
-  <div class="column-6 tablet-4 nested-demo-2">
+  <div class="column-6 tablet-column-4">
     <span>6/4</span>
 
-    <div class="column-6 tablet-4">
+    <div class="column-6 tablet-column-4">
       <span>6/4</span>
-      <div class="column-4 tablet-2"><span>4/2</span></div>
-      <div class="column-2 tablet-2"><span>2/2</span></div>
+      <div class="column-4 tablet-column-2"><span>4/2</span></div>
+      <div class="column-2 tablet-column-2"><span>2/2</span></div>
     </div>
 
-    <div class="column-4 tablet-4"><span>4/4</span></div>
+    <div class="column-4 tablet-column-4 column-first tablet-column-first"><span>4/4</span></div>
   </div>
 
 </div>
@@ -310,7 +310,7 @@ The previous example of nested column uses specific classes to override gutter s
 
 <div class="container">
   <div class="grid-sample">
-    <div class="column-1 tablet-1 phone-1 pre-2 tablet-pre-4 phone-pre-3">
+    <div class="column-1 tablet-column-1 phone-1 pre-2 tablet-pre-4 phone-pre-3">
       <span class="tablet-hide">pre-2</span>
       <span class="tablet-only">tablet-pre-4</span>
       <span class="phone-show">phone-pre-6</span>

@@ -30,6 +30,12 @@
   [class^="column-"] [class^="column-"]:last-of-type {
     margin-right: -0.5rem; }
 
+.column-first {
+  margin-left: -0.5rem; }
+
+.column-last {
+  margin-right: -0.5rem; }
+
 @media screen and (min-width: 860px) {
   .column-1 {
     width: 3.74vw;
@@ -245,7 +251,13 @@
     width: 82.49vw; }
 
   .tablet-column-12 {
-    width: 89.99vw; } }
+    width: 89.99vw; }
+
+  .tablet-column-first {
+    margin-left: -0.5rem; }
+
+  .tablet-column-last {
+    margin-right: -0.5rem; } }
 @media screen and (max-width: 479px) {
   .column-1 {
     width: 14.99vw; }
@@ -299,31 +311,13 @@
     width: 74.99vw; }
 
   .phone-column-6 {
-    width: 89.99vw; } }
-.column-first {
-  margin-left: -10px;
-  margin-left: -0.5rem; }
+    width: 89.99vw; }
 
-.column-last {
-  margin-right: -10px;
-  margin-right: -0.5rem; }
+  .phone-column-first {
+    margin-left: -0.5rem; }
 
-.tablet-column-first {
-  margin-left: -10px;
-  margin-left: -0.5rem; }
-
-.tablet-column-last {
-  margin-right: -10px;
-  margin-right: -0.5rem; }
-
-.phone-column-first {
-  margin-left: -10px;
-  margin-left: -0.5rem; }
-
-.phone-column-last {
-  margin-right: -10px;
-  margin-right: -0.5rem; }
-
+  .phone-column-last {
+    margin-right: -0.5rem; } }
 @media screen and (max-width: 479px) {
   .phone-pre-1 {
     margin-left: 14.99vw; }
