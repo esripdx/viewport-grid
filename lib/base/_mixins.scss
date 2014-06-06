@@ -17,25 +17,6 @@
   }
 }
 
-// Box-sizing mixin
-@mixin box-sizing($value) {
-  -webkit-box-sizing: $value;
-     -moz-box-sizing: $value;
-          box-sizing: $value;
-}
-
-// Clearfix Mixin
-@mixin clearfix() {
-  @extend %clearfix;
-}
-
-// Respond To
-@mixin respond-to($type, $m: max-width) {
-  @media screen and ($m: $type) {
-    @content;
-  }
-}
-
 // Column Mixin
 @mixin column($n) {
   @extend %column-base;
@@ -49,12 +30,12 @@
   max-width: ($n / $large-column-count) * $large-column-max;
 }
 
-// Hide
+// Show
 @mixin show() {
   visibility: visible;
 }
 
-// Show
+// Hide
 @mixin hide() {
   display: none !important;
   visibility: hidden;

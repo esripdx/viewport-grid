@@ -1,9 +1,10 @@
+@import "../legacy-support/ie8";
+
 // Columns Styles
 .container {
   @extend %clearfix;
-  width: $container-width-fallback;
   width: $container-width;
-  max-width: $large-column-max;
+  max-width: $container-max;
   min-width: $container-min;
   padding-right: 0;
   padding-left: 0;
@@ -11,85 +12,70 @@
   margin-left: auto;
 }
 
-// // Column Base Styles
-// %column-base {
-//   @include box-sizing(border-box);
-//   float: left;
-//   margin: 0;
-//   padding: 0 $column-gutter-fallback / 2;
-//   padding: 0 $column-gutter / 2;
-// }
+[class^="column-"] {
+  @include box-sizing(border-box);
+  width: $container-width;
+  padding: 0 $column-gutter / 2;
+  margin: 0;
+  float: left;
+  [class^="column-"]:first-child { margin-left: -$column-gutter / 2;  }
+  [class^="column-"]:last-child {  margin-right: -$column-gutter / 2; }
+  &:last-child { @extend %clearfix; }
+}
 
-// [class^="column-"] {
-//   @extend %column-base;
-//   [class^="column-"]:first-child {
-//     margin-left: -($column-gutter-fallback / 2);
-//     margin-left: -$column-gutter / 2;
-//   }
-//   [class^="column-"]:last-child {
-//     margin-right: -($column-gutter-fallback / 2);
-//     margin-right: -$column-gutter / 2;
-//   }
-// }
+// Large Columns
+@media screen and (min-width: $medium) {
+  @for $n from 1 through $large-column-count {
+    .column-#{$n} {
+      width: ($n / $large-column-count) * $container-width - .01vw;
+      max-width: ($n / $large-column-count) * $container-max;
+      > .column-#{$n} {
+        margin-left: -($column-gutter/2);
+      }
+    }
+    .pre-#{$n}  { margin-left:  ($n / $large-column-count) * $container-width - .01vw;  }
+    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-width - .01vw; }
+  }
+}
 
-// [class^="column-"]:last-child {
-//   @extend %clearfix;
-// }
+// Fixed Pre and Post
+@media screen and (min-width: $container-max) {
+  @for $n from 1 through $large-column-count {
+    .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max; }
+    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max; }
+  }
+}
 
-// // Large Columns
-// @for $n from 1 through $large-column-count {
-//   .#{$large-class}-#{$n} {
-//     width: ($n / $large-column-count) * $container-width - .01vw;
-//     max-width: ($n / $large-column-count) * $large-column-max;
-//     > .column-#{$n} {
-//       margin-left: -($column-gutter-fallback / 2);
-//       margin-left: -($column-gutter/2);
-//     }
-//   }
-// }
+// Medium Columns
+@media screen and (max-width: $medium - 1) {
+  @for $n from 1 through $medium-column-count {
+    .#{$medium-class}-column-#{$n}, .column-#{$n} {
+      width: ($n / $medium-column-count) * $container-width - .01vw;
+    }
+    .pre-#{$n}, .#{$medium-class}-pre-#{$n}{
+      margin-left: ($n / $medium-column-count) * $container-width - .01vw;
+    }
+    .post-#{$n}, .#{$medium-class}-post-#{$n}{
+      margin-right: ($n / $medium-column-count) * $container-width - .01vw;
+    }
+  }
+}
 
-// @include respond-to($large, min-width) {
-//   @for $n from 1 through $large-column-count {
-//     .pre-#{$n} {
-//       margin-left: ($n / $large-column-count) * $large-column-max !important;
-//     }
-//     .post-#{$n} {
-//       margin-right: ($n / $large-column-count) * $large-column-max !important;
-//     }
-//   }
-// }
+// Small Columns
+@media screen and (max-width: $small - 1) {
+  @for $n from 1 through $small-column-count {
+    .#{$small-class}-column-#{$n}, .#{$medium-class}-column-#{$n}, .column-#{$n} {
+      width: ($n / $small-column-count) * $container-width - .01vw;
+    }
+    .pre-#{$n}, .#{$small-class}-pre-#{$n}, .#{$medium-class}-pre-#{$n}{
+      margin-left: ($n / $small-column-count) * $container-width - .01vw;
+    }
+    .post-#{$n}, .#{$small-class}-post-#{$n}, .#{$medium-class}-post-#{$n}{
+      margin-right: ($n / $small-column-count) * $container-width - .01vw;
+    }
+  }
+}
 
-// // Medium Columns
-// @include respond-to($medium-column-breakpoint) {
-//   @for $n from 1 through $medium-column-count {
-//     .#{$medium-class}-#{$n} {
-//       width: ($n / $medium-column-count) * $container-width - .01vw;
-//       max-width: none;
-//     }
-//   }
-//   .#{$medium-class}-pre-0 {
-//     margin-left: inherit;
-//   }
-//   .#{$medium-class}-post-0 {
-//     margin-right: inherit;
-//   }
-// }
-
-
-
-// // Small Columns
-// @include respond-to($small-column-breakpoint) {
-//   @for $n from 1 through $small-column-count {
-//     .#{$small-class}-#{$n} {
-//       width: ($n / $small-column-count) * $container-width - .01vw;
-//       max-width: none;
-//     }
-//   }
-//   .#{$small-class}-pre-0 {
-//     margin-left: inherit;
-//   }
-//   .#{$small-class}-post-0 {
-//     margin-right: inherit;
-//   }
-// }
-
+@if $ie8-support == true {
+  @include ie8-support();
+}
