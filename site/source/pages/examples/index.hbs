@@ -4,16 +4,11 @@ class: examples
 layout: html.hbs
 ---
 
-<div class="container">
+<div class="grid-example leader-3 tablet-leader-2 phone-leader-1">
 
-  <article>
-    <h2>Column Counts</h2>
-    <p>Simple column count defines width relative to viewport. </p>
-  </article>
-
-  <section class="grid-example">
+  <!-- Normal Columns, Non Nested -->
+  <div class="container">
     <div class="column-24"><span>.column-24</span></div>
-
     <div class="column-1"><span>1</span></div>
     <div class="column-1"><span>1</span></div>
     <div class="column-1"><span>1</span></div>
@@ -38,53 +33,246 @@ layout: html.hbs
     <div class="column-1"><span>1</span></div>
     <div class="column-1"><span>1</span></div>
     <div class="column-1"><span>1</span></div>
-
     <div class="column-1"><span>1</span></div>
     <div class="column-23"><span>.column-23</span></div>
-
     <div class="column-2"><span>2</span></div>
     <div class="column-22"><span>.column-22</span></div>
-
     <div class="column-3"><span>3</span></div>
     <div class="column-21"><span>.column-21</span></div>
-
     <div class="column-4"><span>4</span></div>
     <div class="column-20"><span>.column-20</span></div>
-
     <div class="column-5"><span>.column-5</span></div>
     <div class="column-19"><span>.column-19</span></div>
-
     <div class="column-6"><span>.column-6</span></div>
     <div class="column-18"><span>.column-18</span></div>
-
     <div class="column-7"><span>.column-7</span></div>
     <div class="column-17"><span>.column-17</span></div>
-
     <div class="column-8"><span>.column-8</span></div>
     <div class="column-16"><span>.column-16</span></div>
-
     <div class="column-9"><span>.column-9</span></div>
     <div class="column-15"><span>.column-15</span></div>
-
     <div class="column-10"><span>.column-10</span></div>
     <div class="column-14"><span>.column-14</span></div>
-
     <div class="column-11"><span>.column-11</span></div>
     <div class="column-13"><span>.column-13</span></div>
-
     <div class="column-12"><span>.column-12</span></div>
     <div class="column-12"><span>.column-12</span></div>
-  </section>
+  </div>
 
-  <article>
-    <h2>Responsive Column Classes</h2>
-    <p>The Viewport Grid can define the behavior of columns explicitly with the classes `phone-column-n` and `tablet-column-n`.</p>
-  </article>
-  <section class="grid-examples">
-    <div class="column-16 tablet-8 phone-4">
-      <span class="tablet-hide">column-16</span>
-      <span class="tablet-only">tablet-8</span>
-      <span class="phone-show">phone-4</span>
+  <!-- Responsive Columns -->
+  <div class="container">
+    <div class="column-24">
+      <h2>
+        Responsive Columns
+      </h2>
+      <p>The Harness grid can define the behavior of columns explicitly with the classes `phone-column-n` and `tablet-column-n`.</p>
     </div>
-  </section>
+  </div>
+
+  <div class="container">
+
+    <div class="column-24">
+      <div class="column-1 tablet-4 phone-1">
+        <span class="tablet-hide">column-1</span>
+        <span class="tablet-only">tablet-4</span>
+        <span class="phone-show">phone-1</span>
+      </div>
+      <div class="column-23 tablet-8 phone-5">
+        <span class="tablet-hide">column-23</span>
+        <span class="tablet-only">tablet-8</span>
+        <span class="phone-show">phone-5</span>
+      </div>
+    </div>
+
+    <div class="column-24">
+      <div class="column-2 tablet-8 phone-5">
+        <span class="tablet-hide">column-2</span>
+        <span class="tablet-only">tablet-8</span>
+        <span class="phone-show">phone-5</span>
+      </div>
+      <div class="column-22 tablet-4 phone-1">
+        <span class="tablet-hide">column-22</span>
+        <span class="tablet-only">tablet-4</span>
+        <span class="phone-show">phone-1</span>
+      </div>
+    </div>
+
+    <div class="column-24">
+      <div class="column-3 tablet-5 phone-2">
+        <span class="tablet-hide">column-3</span>
+        <span class="tablet-only">tablet-5</span>
+        <span class="phone-show">phone-2</span>
+      </div>
+      <div class="column-21 tablet-7 phone-4">
+        <span class="tablet-hide">column-21</span>
+        <span class="tablet-only">tablet-7</span>
+        <span class="phone-show">phone-4</span>
+      </div>
+    </div>
+
+    <div class="column-24">
+      <div class="column-4 tablet-7 phone-4">
+        <span class="tablet-hide">column-4</span>
+        <span class="tablet-only">tablet-7</span>
+        <span class="phone-show">phone-4</span>
+      </div>
+      <div class="column-20 tablet-5 phone-2">
+        <span class="tablet-hide">column-20</span>
+        <span class="tablet-only">tablet-5</span>
+        <span class="phone-show">phone-2</span>
+      </div>
+    </div>
+
+    <div class="column-24">
+      <div class="column-5 tablet-6 phone-3">
+        <span class="tablet-hide">column-5</span>
+        <span class="tablet-only">tablet-6</span>
+        <span class="phone-show">phone-3</span>
+      </div>
+      <div class="column-19 tablet-6 phone-3">
+        <span class="tablet-hide">column-19</span>
+        <span class="tablet-only">tablet-6</span>
+        <span class="phone-show">phone-3</span>
+      </div>
+    </div>
+
+    <div class="column-24">
+      <div class="column-6 tablet-6 phone-3">
+        <span class="tablet-hide">column-6</span>
+        <span class="tablet-only">tablet-6</span>
+        <span class="phone-show">phone-3</span>
+      </div>
+      <div class="column-18 column-6 tablet-6 phone-3">
+        <span class="tablet-hide">column-18</span>
+        <span class="tablet-only">tablet-6</span>
+        <span class="phone-show">phone-3</span>
+      </div>
+    </div>
+
+  </div>
+
+
+<div class="container">
+  <div class="column-24">
+    <h2>Nested Columns</h2>
+    <p>Contrary to other flexible-width grid systems, the harness grid system's columns do not change behavior when nested. Because the grid is set up with <code>vw</code>, nested columns still span the same width as their non-nested counterparts. Further, clearing of the column-gutter is taken care of for you with <code>:first-child</code> and <code>:last-child</code> psuedo-selectors on all column classes. </p>
+  </div>
+
+  <div class="column-18 tablet-8">
+    <span>18/8</span>
+
+    <div class="column-4 tablet-4 first">
+      <span>4/4</span>
+      <div class="column-1 tablet-4 first"><span>1/4</span></div>
+      <div class="column-1 tablet-4 tablet-first"><span>1/4</span></div>
+      <div class="column-1 tablet-4 tablet-first"><span>1/4</span></div>
+      <div class="column-1 tablet-4 last tablet-first"><span>1/4</span></div>
+    </div>
+
+    <div class="column-2 tablet-4 tablet-last"><span>2/4</span></div>
+
+    <div class="column-10 tablet-8">
+      <span>10/8</span>
+      <div class="column-5 tablet-4 first">
+        <span>5/4</span>
+      </div>
+      <div class="column-5 tablet-4">
+        <span>5/4</span>
+        <div class="column-2 tablet-4 first">
+          <span>2/4</span>
+        </div>
+        <div class="column-3 tablet-4 last tablet-first">
+          <span>3/4</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="column-1 tablet-4"><span>1/4</span></div>
+    <div class="column-1 tablet-5 last"><span>1/5</span></div>
+  </div>
+
+  <div class="column-6 tablet-4 nested-demo-2">
+    <span>6/4</span>
+
+    <div class="column-6 tablet-4 first">
+      <span>6/4</span>
+      <div class="column-4 tablet-2 first"><span>4/2</span></div>
+      <div class="column-2 tablet-2"><span>2/2</span></div>
+    </div>
+
+    <div class="column-4 tablet-4 first"><span>4/4</span></div>
+  </div>
+
+</div>
+
+<div class="container">
+  <div class="column-24">
+    <h2>Using Column-24 as a Row</h2>
+    <p>Because columns can now be nested, we don't need rows, really. But you will still have this problem:</p>
+  </div>
+  <div class="column-2"><span>.column-2 With a lot of content, so it pushes down.</span></div>
+  <div class="column-22"><span>.column-22</span></div>
+  <div class="column-4"><span>.column-4</span></div>
+  <div class="column-4"><span>.column-4</span></div>
+  <div class="column-4"><span>.column-4</span></div>
+  <div class="column-24">
+    <p>With this grid you can wrap the first two columns in a 24 column grid:</p>
+  </div>
+  <div class="column-24">
+    <div class="column-2"><span>.column-2 With a lot of content, so it pushes down.</span></div>
+    <div class="column-22"><span>.column-22</span></div>
+  </div>
+  <div class="column-4"><span>.column-4</span></div>
+  <div class="column-4"><span>.column-4</span></div>
+  <div class="column-4"><span>.column-4</span></div>
+</div>
+
+
+<div class="container">
+  <div class="column-24">
+    <h2>Pre and Post</h2>
+    <p>Pre and Post classes are used to move your columns across the grid by defining how many columns they should be from their neighbors on either side.</p>
+  </div>
+</div>
+<div class="grid-example">
+  <div class="container">
+    <div class="column-8 pre-4 post-2">
+      <span>column-8 pre-4 post-2</span>
+    </div>
+    <div class="column-4">
+      <span>column-4</span>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="column-24">
+    <h2>Responsive Pre and Post</h2>
+    <p>Works the same was as responsive columns.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="grid-sample">
+    <div class="column-1 tablet-1 phone-1 pre-2 tablet-pre-4 phone-pre-3">
+      <span class="tablet-hide">pre-2</span>
+      <span class="tablet-only">tablet-pre-4</span>
+      <span class="phone-show">phone-pre-6</span>
+    </div>
+  </div>
+</div>
+
+<div class="container trailer-5 tablet-trailer-3 phone-trailer-1">
+  <div class="grid-sample">
+    <div class="column-1 tablet-1 phone-1 post-2 tablet-post-4 phone-post-3">
+      <span class="tablet-hide">post-2</span>
+      <span class="tablet-only">tablet-post-4</span>
+      <span class="phone-show">phone-post-6</span>
+    </div>
+    <div class="column-1 tablet-1 phone-1">
+      <span>column-1</span>
+    </div>
+  </div>
 </div>
