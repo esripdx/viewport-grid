@@ -8,8 +8,16 @@
 // Viewport Grid Imports
 @import '../../../lib/imports';
 
-$red: #880000;
-
-h1 {
-  color: $red;
+.grid-example [class*="column-"] {
+  span {
+    width: 100%;
+    display: block;
+    background-color: $lightest-gray;
+    border: 2px dashed $lighter-gray;
+    font-family: $source;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+  }
 }
