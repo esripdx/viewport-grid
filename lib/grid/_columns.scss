@@ -33,16 +33,6 @@
         margin-left: -($column-gutter/2);
       }
     }
-    .pre-#{$n}  { margin-left:  ($n / $large-column-count) * $container-width - .01vw;  }
-    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-width - .01vw; }
-  }
-}
-
-// Fixed Pre and Post
-@media screen and (min-width: $container-max) {
-  @for $n from 1 through $large-column-count {
-    .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max; }
-    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max; }
   }
 }
 
@@ -52,12 +42,6 @@
     .#{$medium-class}-column-#{$n}, .column-#{$n} {
       width: ($n / $medium-column-count) * $container-width - .01vw;
     }
-    .pre-#{$n}, .#{$medium-class}-pre-#{$n}{
-      margin-left: ($n / $medium-column-count) * $container-width - .01vw;
-    }
-    .post-#{$n}, .#{$medium-class}-post-#{$n}{
-      margin-right: ($n / $medium-column-count) * $container-width - .01vw;
-    }
   }
 }
 
@@ -66,12 +50,6 @@
   @for $n from 1 through $small-column-count {
     .#{$small-class}-column-#{$n}, .#{$medium-class}-column-#{$n}, .column-#{$n} {
       width: ($n / $small-column-count) * $container-width - .01vw;
-    }
-    .pre-#{$n}, .#{$small-class}-pre-#{$n}, .#{$medium-class}-pre-#{$n}{
-      margin-left: ($n / $small-column-count) * $container-width - .01vw;
-    }
-    .post-#{$n}, .#{$small-class}-post-#{$n}, .#{$medium-class}-post-#{$n}{
-      margin-right: ($n / $small-column-count) * $container-width - .01vw;
     }
   }
 }
