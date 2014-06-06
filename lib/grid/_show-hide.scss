@@ -1,1 +1,31 @@
-// Show and Hide Classes
+// Show Hide Helper Classes
+.show { @include show(); }
+.hide { @include hide(); }
+
+// Small
+@media screen and (max-width: $small - 1) {
+  .#{$small-class}-show   {@include show();}
+  .#{$small-class}-hide   {@include hide();}
+  .#{$medium-class}-show  {@include show();}
+  .#{$medium-class}-hide  {@include hide();}
+  .#{$medium-class}-only  {@include hide();}
+}
+
+// Medium
+@media screen and (min-width: $small) {
+  .#{$small-class}-show   {@include hide();}
+  .#{$small-class}-hide   {@include show();}
+  .#{$medium-class}-show  {@include show();}
+  .#{$medium-class}-hide  {@include hide();}
+  .#{$medium-class}-only  {@include show();}
+}
+
+// Large
+@media screen and (min-width: $medium) {
+  .#{$medium-class}-show  {@include hide();}
+  .#{$medium-class}-hide  {@include show();}
+  .#{$medium-class}-only  {@include hide();}
+}
+
+
+
