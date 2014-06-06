@@ -2,10 +2,10 @@
 *   https://github.com/esripdx/viewport-grid
 *   Licensed ISC */
 
-.container:before, [class^="column-"]:last-child:before, .container:after, [class^="column-"]:last-child:after {
+.container:before, [class^="column-"]:last-of-type:before, .container:after, [class^="column-"]:last-of-type:after {
   content: " ";
   display: table; }
-.container:after, [class^="column-"]:last-child:after {
+.container:after, [class^="column-"]:last-of-type:after {
   clear: both; }
 
 .container {
@@ -25,9 +25,9 @@
   padding: 0 0.5rem;
   margin: 0;
   float: left; }
-  [class^="column-"] [class^="column-"]:first-child {
+  [class^="column-"] [class^="column-"]:first-of-type {
     margin-left: -0.5rem; }
-  [class^="column-"] [class^="column-"]:last-child {
+  [class^="column-"] [class^="column-"]:last-of-type {
     margin-right: -0.5rem; }
 
 @media screen and (min-width: 860px) {
