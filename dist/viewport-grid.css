@@ -175,59 +175,155 @@
     .column-24 > .column-24 {
       margin-left: -0.5rem; } }
 @media screen and (max-width: 859px) {
-  .tablet-column-1, .column-1 {
+  .column-1 {
     width: 7.49vw; }
 
-  .tablet-column-2, .column-2 {
+  .column-2 {
     width: 14.99vw; }
 
-  .tablet-column-3, .column-3 {
+  .column-3 {
     width: 22.49vw; }
 
-  .tablet-column-4, .column-4 {
+  .column-4 {
     width: 29.99vw; }
 
-  .tablet-column-5, .column-5 {
+  .column-5 {
     width: 37.49vw; }
 
-  .tablet-column-6, .column-6 {
+  .column-6 {
     width: 44.99vw; }
 
-  .tablet-column-7, .column-7 {
+  .column-7 {
     width: 52.49vw; }
 
-  .tablet-column-8, .column-8 {
+  .column-8 {
     width: 59.99vw; }
 
-  .tablet-column-9, .column-9 {
+  .column-9 {
     width: 67.49vw; }
 
-  .tablet-column-10, .column-10 {
+  .column-10 {
     width: 74.99vw; }
 
-  .tablet-column-11, .column-11 {
+  .column-11 {
     width: 82.49vw; }
 
-  .tablet-column-12, .column-12 {
-    width: 89.99vw; } }
-@media screen and (max-width: 479px) {
-  .phone-column-1, .tablet-column-1, .column-1 {
+  .column-12 {
+    width: 89.99vw; }
+
+  .tablet-column-1 {
+    width: 7.49vw; }
+
+  .tablet-column-2 {
     width: 14.99vw; }
 
-  .phone-column-2, .tablet-column-2, .column-2 {
+  .tablet-column-3 {
+    width: 22.49vw; }
+
+  .tablet-column-4 {
     width: 29.99vw; }
 
-  .phone-column-3, .tablet-column-3, .column-3 {
+  .tablet-column-5 {
+    width: 37.49vw; }
+
+  .tablet-column-6 {
     width: 44.99vw; }
 
-  .phone-column-4, .tablet-column-4, .column-4 {
+  .tablet-column-7 {
+    width: 52.49vw; }
+
+  .tablet-column-8 {
     width: 59.99vw; }
 
-  .phone-column-5, .tablet-column-5, .column-5 {
+  .tablet-column-9 {
+    width: 67.49vw; }
+
+  .tablet-column-10 {
     width: 74.99vw; }
 
-  .phone-column-6, .tablet-column-6, .column-6 {
+  .tablet-column-11 {
+    width: 82.49vw; }
+
+  .tablet-column-12 {
     width: 89.99vw; } }
+@media screen and (max-width: 479px) {
+  .column-1 {
+    width: 14.99vw; }
+
+  .column-2 {
+    width: 29.99vw; }
+
+  .column-3 {
+    width: 44.99vw; }
+
+  .column-4 {
+    width: 59.99vw; }
+
+  .column-5 {
+    width: 74.99vw; }
+
+  .column-6 {
+    width: 89.99vw; }
+
+  .tablet-column-1 {
+    width: 14.99vw; }
+
+  .tablet-column-2 {
+    width: 29.99vw; }
+
+  .tablet-column-3 {
+    width: 44.99vw; }
+
+  .tablet-column-4 {
+    width: 59.99vw; }
+
+  .tablet-column-5 {
+    width: 74.99vw; }
+
+  .tablet-column-6 {
+    width: 89.99vw; }
+
+  .phone-column-1 {
+    width: 14.99vw; }
+
+  .phone-column-2 {
+    width: 29.99vw; }
+
+  .phone-column-3 {
+    width: 44.99vw; }
+
+  .phone-column-4 {
+    width: 59.99vw; }
+
+  .phone-column-5 {
+    width: 74.99vw; }
+
+  .phone-column-6 {
+    width: 89.99vw; } }
+.column-first {
+  margin-left: -10px;
+  margin-left: -0.5rem; }
+
+.column-last {
+  margin-right: -10px;
+  margin-right: -0.5rem; }
+
+.tablet-column-first {
+  margin-left: -10px;
+  margin-left: -0.5rem; }
+
+.tablet-column-last {
+  margin-right: -10px;
+  margin-right: -0.5rem; }
+
+.phone-column-first {
+  margin-left: -10px;
+  margin-left: -0.5rem; }
+
+.phone-column-last {
+  margin-right: -10px;
+  margin-right: -0.5rem; }
+
 @media screen and (max-width: 479px) {
   .phone-pre-1 {
     margin-left: 14.99vw; }

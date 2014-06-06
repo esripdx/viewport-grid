@@ -39,7 +39,12 @@
 // Medium Columns
 @media screen and (max-width: $medium - 1) {
   @for $n from 1 through $medium-column-count {
-    .#{$medium-class}-column-#{$n}, .column-#{$n} {
+    .column-#{$n} {
+      width: ($n / $medium-column-count) * $container-width - .01vw;
+    }
+  }
+  @for $n from 1 through $medium-column-count {
+    .#{$medium-class}-column-#{$n}  {
       width: ($n / $medium-column-count) * $container-width - .01vw;
     }
   }
@@ -48,12 +53,57 @@
 // Small Columns
 @media screen and (max-width: $small - 1) {
   @for $n from 1 through $small-column-count {
-    .#{$small-class}-column-#{$n}, .#{$medium-class}-column-#{$n}, .column-#{$n} {
+    .column-#{$n}{
+      width: ($n / $small-column-count) * $container-width - .01vw;
+    }
+  }
+  @for $n from 1 through $small-column-count {
+    .#{$medium-class}-column-#{$n}{
+      width: ($n / $small-column-count) * $container-width - .01vw;
+    }
+  }
+  @for $n from 1 through $small-column-count {
+   .#{$small-class}-column-#{$n} {
       width: ($n / $small-column-count) * $container-width - .01vw;
     }
   }
 }
 
+
+// Small First/Last
+@media screen and (max-width: $small -1) {
+
+}
+
 @if $ie8-support == true {
   @include ie8-support();
+}
+
+.column-first {
+  margin-left: -($column-gutter-fallback / 2);
+  margin-left: -($column-gutter/2);
+}
+
+.column-last {
+  margin-right: -($column-gutter-fallback / 2);
+  margin-right: -($column-gutter / 2);
+}
+
+.#{$medium-class}-column-first {
+  margin-left: -($column-gutter-fallback / 2);
+  margin-left: -($column-gutter / 2);
+}
+
+.#{$medium-class}-column-last {
+  margin-right: -($column-gutter-fallback / 2);
+  margin-right: -($column-gutter / 2);
+}
+
+.#{$small-class}-column-first {
+  margin-left: -($column-gutter-fallback / 2);
+  margin-left: -($column-gutter / 2);
+}
+.#{$small-class}-column-last {
+  margin-right: -($column-gutter-fallback / 2);
+  margin-right: -($column-gutter / 2);
 }
