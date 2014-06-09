@@ -16,6 +16,13 @@
 //   background-size: 2.66666666vw;
 // }
 
+a {
+  color: $darkest-gray;
+  &:hover {
+    color: blue;
+  }
+}
+
 .grid-example [class*="column-"] {
   span {
     width: 100%;
@@ -81,6 +88,25 @@
   z-index: 1;
 
   @include woodblock('5');
+
+  &:hover {
+    border-color: blue;
+  }
+}
+
+.main-links {
+  position: absolute;
+  left: 13vw;
+  top: 14vh;
+  margin-top: 14rem;
+  @extend %Oswald;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  font-size: 2rem;
+  padding: 0.5em;
+  list-style-type: none;
+  z-index: 10;
+  @include woodblock('1');
 }
 
 .project-description {
@@ -92,4 +118,5 @@
   @extend %SourceLight;
   padding-bottom: 2em;
   border-bottom: 8px solid black;
+  text-shadow: 1px 1px white;
 }
