@@ -1,0 +1,10 @@
+.content-area {
+  @extend %Source;
+  font-size: 1.125rem;
+  line-height: 1.66rem;
+  padding-top: 1.5rem;
+
+  p {
+    margin-bottom: 1.66rem;
+  }
+}

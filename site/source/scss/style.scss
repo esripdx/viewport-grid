@@ -1,3 +1,5 @@
+// Viewport Grid Imports
+@import '../../../lib/imports';
 
 // Import Microsite Styles
 @import 'base/config';
@@ -7,21 +9,10 @@
 
 // Modules
 @import 'modules/woodblocks';
+@import 'modules/content-area';
 
-// Viewport Grid Imports
-@import '../../../lib/imports';
-
-// body {
-//   background: url(../img/bg-test.svg) center center;
-//   background-size: 2.66666666vw;
-// }
-
-a {
-  color: $darkest-gray;
-  &:hover {
-    color: blue;
-  }
-}
+// Pages
+@import 'pages/homepage';
 
 .grid-example [class*="column-"] {
   span {
@@ -35,88 +26,4 @@ a {
     margin-top: 1em;
     text-align: center;
   }
-}
-
-.color-block-test {
-  display: inline-block;
-  position: absolute;
-  width: 50vw;
-  left: 25vw;
-  height: 100vh;
-  margin: auto;
-  background-color: rgba(cyan, 0.95);
-  z-index: 0;
-  @include woodblock('2');
-}
-
-.color-block-two {
-  display: inline-block;
-  position: absolute;
-  width: 50vw;
-  left: 30vw;
-  top: 10vh;
-  height: 90vh;
-  margin: auto;
-  background-color: rgba(magenta, 0.8);
-  z-index: 0;
-  @include woodblock('8');
-}
-
-.color-block-three {
-  display: inline-block;
-  position: absolute;
-  width: 40vw;
-  left: 10vw;
-  top: 50vh;
-  height: 30vh;
-  margin: auto;
-  background-color: rgba(yellow, 0.4);
-  z-index: 0;
-  @include woodblock('3');
-}
-
-.title-block {
-  position: absolute;
-  left: 13vw;
-  top: 14vh;
-  @extend %Oswald;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 4rem;
-  padding: 0.5em;
-  border: 8px solid black;
-  z-index: 1;
-
-  @include woodblock('5');
-
-  &:hover {
-    border-color: blue;
-  }
-}
-
-.main-links {
-  position: absolute;
-  left: 13vw;
-  top: 14vh;
-  margin-top: 14rem;
-  @extend %Oswald;
-  text-transform: uppercase;
-  letter-spacing: .2em;
-  font-size: 2rem;
-  padding: 0.5em;
-  list-style-type: none;
-  z-index: 10;
-  @include woodblock('1');
-}
-
-.project-description {
-  position: absolute;
-  right: 5vw;
-  top: 54vh;
-  font-size: 2rem;
-  width: 24em;
-  @extend %SourceLight;
-  padding-bottom: 2em;
-  border-bottom: 8px solid black;
-  text-shadow: 1px 1px white;
 }

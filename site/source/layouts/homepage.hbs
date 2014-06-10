@@ -1,0 +1,27 @@
+---
+layout: layout.hbs
+---
+<div class="container">
+  <div class="column-24">
+    <div class="pre-3 column-18">
+      <div class="color-block leader-1 padding-trailer-5">
+        <h1 class="title-block">Viewport Grid</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="column-24">
+    <div class="color-block-2 column-8 tablet-column-6 pre-6 tablet-pre-2"></div>
+    <div class="column-12 pre-8">
+      <div class="project-description">
+        <p>A viewport width based grid system that takes it's cues from classical typographic design principles.</p>
+      </div>
+      <div class="content-area">
+        {{#markdown}}
+          {{> body}}
+        {{/markdown}}
+      </div>
+    </div>
+
+  </div>
+</div>
