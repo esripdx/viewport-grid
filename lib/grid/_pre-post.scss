@@ -2,7 +2,7 @@
 
 // Small Columns
 @media screen and (max-width: $small - 1) {
-  @for $n from 1 through $small-column-count {
+  @for $n from 0 through $small-column-count {
     .#{$small-class}-pre-#{$n} {
       @include pre($n, $small-column-count);
     }
@@ -14,7 +14,7 @@
 
 // Medium Columns
 @media screen and (max-width: $medium - 1) {
-  @for $n from 1 through $medium-column-count {
+  @for $n from 0 through $medium-column-count {
     .#{$medium-class}-pre-#{$n} {
       @include pre($n, $medium-column-count);
     }
@@ -26,7 +26,7 @@
 
 // Large Columns
 @media screen and (min-width: $medium) {
-  @for $n from 1 through $large-column-count {
+  @for $n from 0 through $large-column-count {
     .pre-#{$n} {
       @include pre($n, $large-column-count);
     }
@@ -38,7 +38,7 @@
 
 // Fixed Pre and Post
 @media screen and (min-width: $container-max) {
-  @for $n from 1 through $large-column-count {
+  @for $n from 0 through $large-column-count {
     .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max; }
     .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max; }
   }
