@@ -1,4 +1,7 @@
 // Pre and Post Code
+[class*="pre-"] {
+  position: relative;
+}
 
 // Small Columns
 @media screen and (max-width: $small - 1) {
@@ -39,7 +42,7 @@
 // Fixed Pre and Post
 @media screen and (min-width: $container-max) {
   @for $n from 0 through $large-column-count {
-    .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max; }
-    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max; }
+    .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max !important; }
+    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max !important; }
   }
 }
