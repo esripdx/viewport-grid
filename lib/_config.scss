@@ -17,9 +17,10 @@ $medium:                   860px    !default;
 $large:                    1280px   !default;
 
 // Grid Settings
-$container-width:          90vw     !default;
+$vw-ratio:                 0.9;
+$container-width:          $vw-ratio * 100vw     !default;
 $container-min:            0        !default;
-$container-max:            $large * 0.9   !default;
+$container-max:            $large * $vw-ratio !default;
 $column-gutter:            1rem     !default;
 
 // Grid Fallback Options
