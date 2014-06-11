@@ -44,7 +44,6 @@
 // Grid Pre
 @mixin pre($n, $count: $large-column-count) {
   margin-left: ($n / $count) * $container-width - .1vw !important;
-  left: -0.5rem;
 }
 
 @mixin post($n, $count: $large-column-count) {

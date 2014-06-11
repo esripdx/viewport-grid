@@ -19,7 +19,7 @@ $large:                    1280px   !default;
 // Grid Settings
 $container-width:          90vw     !default;
 $container-min:            0        !default;
-$container-max:            $large   !default;
+$container-max:            $large * 0.9   !default;
 $column-gutter:            1rem     !default;
 
 // Grid Fallback Options
