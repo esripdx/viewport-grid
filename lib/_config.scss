@@ -21,7 +21,7 @@ $vw-ratio:                 0.9;
 $container-width:          $vw-ratio * 100vw     !default;
 $container-min:            0        !default;
 $container-max:            $large * $vw-ratio !default;
-$column-gutter:            1vw     !default;
+$column-gutter:            1rem     !default;
 
 // Grid Fallback Options
 $ie8-support:              false    !default;
