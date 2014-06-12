@@ -2,13 +2,19 @@
 title: "Welcome"
 layout: homepage.hbs
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lacinia eget lacus ut hendrerit. Cras et tortor et odio tempus blandit. Aenean in sodales urna, nec mollis purus. Praesent posuere ut mauris id vestibulum. Maecenas ligula orci, fermentum pulvinar ante id, dapibus molestie dui. Aenean a eleifend felis. Phasellus blandit dignissim sagittis. Integer sed ipsum diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. In non eros at enim auctor pellentesque.
 
-Sed eget libero tristique, pretium ligula eu, placerat elit. Mauris adipiscing lorem ac tincidunt vulputate. Cras vel lectus et urna cursus auctor. Donec at quam non diam eleifend iaculis. Fusce tempus pretium arcu, ac elementum felis fermentum ut. Maecenas gravida arcu sed augue interdum mattis. Nunc blandit vitae metus ac fringilla. Etiam vel congue lorem. Duis quis nisl mattis, bibendum metus in, suscipit nulla. Pellentesque sollicitudin in dui quis mollis.
+The use of the grid as an ordering system is the expression of a certain mental attitude inasmuch as it shows the designer concieves his work in terms that are contructive and oriented to the future. This is the expression of a professional ethos: the designer's work should have the clearly intelligible, objective, function and aesthetic quality of mathematical thinking.
 
-Integer id libero ultrices, faucibus lectus nec, gravida nulla. Duis ac convallis nulla, ac gravida dolor. Vestibulum vel ipsum aliquet, auctor lacus ac, pellentesque sapien. Pellentesque ac mi nunc. Phasellus pretium egestas odio, quis adipiscing velit vulputate non. Integer eget molestie quam, sed adipiscing nisi. Aliquam sed lorem vel diam ullamcorper auctor. Ut laoreet velit aliquam venenatis imperdiet. Fusce aliquam eleifend commodo. Etiam porttitor massa et dui tristique, nec luctus nisl congue. Nunc porta nibh in ullamcorper facilisis. Duis laoreet vestibulum tellus, in scelerisque magna mollis ut. Suspendisse metus libero, suscipit eu fringilla quis, euismod in diam.
+His work would thus be a contribution to general culture and itself form part of it.
 
-Aliquam vestibulum nibh eget ultrices congue. Maecenas in tellus vel urna lacinia rhoncus. Nam vulputate nisi nisi, ac condimentum sapien consequat interdum. Pellentesque blandit aliquam massa. Nulla tortor nibh, pharetra quis ullamcorper non, rhoncus dignissim est. Nam cursus mattis nulla, id pellentesque sapien elementum imperdiet. Phasellus fermentum porta eleifend. Praesent tristique, leo sit amet bibendum fringilla, velit elit hendrerit magna, ac ornare turpis orci et metus. Fusce pretium mi at lacus eleifend adipiscing. Fusce ligula velit, sagittis vel fringilla vitae, eleifend quis risus. Quisque id ante lobortis, porttitor quam eu, vulputate nunc. Nulla nec consequat ante. Morbi aliquam, orci ut posuere sagittis, ipsum eros hendrerit mi, sed dapibus dui dui ut eros. Ut rhoncus imperdiet pharetra. Morbi eu tempus velit.
+Constructive design which is capable of analysis and reproduction can influence and enhance the taste of a society and the way it conceives forms and colours. Design which is objective, committed to the common weal, well composed and refined constitutes the basis of democratic behavior. Constructivist design means the conversion of design laws into practical solutions. Work done systematically and in accordance with the strict formal principles makes those demands for directness, intelligibility and the integratiion of all factors which are also vital in sociopolitical life.
 
-Duis varius, tellus sit amet vulputate pellentesque, ante massa iaculis neque, at ultricies ipsum lectus et nisi. Donec tincidunt pharetra commodo. Vivamus dolor diam, pellentesque ac lorem at, facilisis ullamcorper neque. Aenean euismod lorem at ipsum semper, eleifend faucibus purus egestas. Sed gravida elit vel ante cursus tempus. Nullam pellentesque at lorem non placerat. Vivamus tristique urna eu quam adipiscing, vel tincidunt purus ultrices. Suspendisse rhoncus aliquam molestie. Vivamus velit ipsum, congue a hendrerit vel, adipiscing ac elit. Vivamus sit amet ante sit amet risus egestas pharetra et at diam. Cras at ultrices lacus, vitae pretium nisl.
-
+Working with the grid system means submitting to laws of universal validity. The use of the grid system implies
+- the will to systematize
+- the will to penetrate to the essentials, to concentrate
+- the will to cultivate objectivity instead of subjectivity
+- the will to rationalize the creative and technical production processes
+- the will to integrate elements of colour, form, and material
+- the will to achieve architectural dominion over surface and space
+- the will to adopt a positive, forward-looking attititude
+- the recognition of the importance of education and the effect of work devised in a constructive and creative spirit.

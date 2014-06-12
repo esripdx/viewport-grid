@@ -38,9 +38,18 @@
 // ┌─────────┐
 // │ T Y P E │
 // └─────────┘
+html {
+  font-size: 16px;
+}
+
+
 a {
   color: $darkest-gray;
   &:hover {
     color: blue;
   }
+}
+
+code {
+  color: $black;
 }
