@@ -33,3 +33,23 @@
   font-family: $source; font-weight: 400; font-style: normal;
   em, strong {@extend %Source}
 }
+
+
+// ┌─────────┐
+// │ T Y P E │
+// └─────────┘
+html {
+  font-size: 16px;
+}
+
+
+a {
+  color: $darkest-gray;
+  &:hover {
+    color: blue;
+  }
+}
+
+code {
+  color: $black;
+}
