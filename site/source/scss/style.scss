@@ -1,5 +1,6 @@
 // Viewport Grid Imports
 @import '../../../lib/imports';
+// @import 'tailcoat/tailcoat';
 
 // Import Microsite Styles
 @import 'base/config';
@@ -28,15 +29,33 @@ img {
 
 .grid-example [class*="column-"] {
   span {
-  width: 100%;
-  display: block;
-  color: $white;
-  background-color: rgba(blue, 0.6);
-  font-family: $source;
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin-top: 1em;
-  text-align: center;
+    width: 100%;
+    display: block;
+    color: $white;
+    background-color: rgba(blue, 0.6);
+    font-family: $source;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-top: 1em;
+    text-align: center;
+  }
+}
+
+.nested-demo [class*="column-"] {
+  [class*="column-"] {
+    span {
+      background-color: rgba(blue, 0.4);
+    }
+    [class*="column-"] {
+      span {
+        background-color: rgba(blue, 0.2);
+      }
+      [class*="column-"] {
+        span {
+          background-color: rgba(blue, 0.1);
+        }
+      }
+    }
   }
 }
 
@@ -56,6 +75,7 @@ img {
   width: 100%;
   display: inline-block;
   background-color: rgba($gray, 0.05);
+  border: 1px solid $lighter-gray;
   }
 }
 

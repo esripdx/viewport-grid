@@ -1,0 +1,2 @@
+## Nested Columns with Column Rows
+The previous example of nested columns uses specific classes to override gutter styles when deeply nested column start cause gutter-clearing problems. An alternate solution is to avoid these first/last classes and instead wrap your nested divs in columns that behave like rows. VW Grid favors neither solution, so it comes down to which you feel leaves your markup cleaner and more readable.
