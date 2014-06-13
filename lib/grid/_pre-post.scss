@@ -16,6 +16,14 @@
   }
 }
 
+// HEY
+
+// [class*="column-"] {
+//   & [class*="pre-"] ~ [class*="column-"]:last-of-type {
+//     $right: ($n / $count) * $container-width - 0.1vw;
+//     margin-right: calc(#{$right} - #{$column-gutter});
+//   }
+// }
 // Pre and Post Code
 
 // Small Columns
