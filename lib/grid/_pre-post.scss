@@ -1,29 +1,29 @@
 // Pre and Post Code
-[class*="pre-"] {
-  position: relative;
-}
+// [class*="pre-"] {
+//   position: relative;
+// }
 
-[class*="column-"] {
-  [class*="pre-"] {
-    left: -($column-gutter/2);
-  }
-  & [class*="pre-"] ~ [class*="column-"] {
-    position: relative;
-    left: -($column-gutter/2);
-  }
-  & [class*="pre-"] ~ [class*="column-"]:last-of-type {
-    margin-right: -$column-gutter;
-  }
-}
+// [class*="column-"] {
+//   [class*="pre-"] {
+//     left: -($column-gutter/2);
+//   }
+//   & [class*="pre-"] ~ [class*="column-"] {
+//     position: relative;
+//     left: -($column-gutter/2);
+//   }
+//   & [class*="pre-"] ~ [class*="column-"]:last-of-type {
+//     margin-right: -$column-gutter;
+//   }
+// }
 
 // HEY
 
-// [class*="column-"] {
-//   & [class*="pre-"] ~ [class*="column-"]:last-of-type {
-//     $right: ($n / $count) * $container-width - 0.1vw;
-//     margin-right: calc(#{$right} - #{$column-gutter});
-//   }
-// }
+[class*="column-"] {
+  & [class*="pre-"] ~ [class*="column-"]:last-of-type {
+    // $right: ($n / $count) * $container-width - 0.1vw;
+    margin-right: -$column-gutter !important;
+  }
+}
 // Pre and Post Code
 
 // Small Columns
@@ -74,7 +74,11 @@
 // Fixed Pre and Post
 @media screen and (min-width: $large) {
   @for $n from 0 through $large-column-count {
-    .pre-#{$n}  { margin-left: ($n / $large-column-count) * $container-max !important; }
+    .pre-#{$n}  {
+      // margin-left: ($n / $large-column-count) * $container-max !important;
+      left: ($n / $large-column-count) * $container-max  !important;
+      margin-right: ($n / $large-column-count) * $container-max  !important;
+    }
     // [class*="column-"] .pre-#{$n}:first-child {
     //   $margin: ($n / $large-column-count) * $container-max;
     //   $clear: $column-gutter / 2;

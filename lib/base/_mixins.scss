@@ -44,12 +44,12 @@
 // Grid Pre
 @mixin pre($n, $count: $large-column-count) {
   // FIX NEEDS 200 LINES
-  margin-left: ($n / $count) * $container-width - 0.1vw !important;
+  // margin-left: ($n / $count) * $container-width - 0.1vw !important;
 
   // PRE's ONLY MOVE THEIR ONE COLUMN
-  // position: relative;
-  // left: ($n / $count) * $container-width - 0.1vw !important;
-  // margin-right: ($n / $count) * $container-width - 0.1vw !important;
+  position: relative;
+  left: ($n / $count) * $container-width - 0.1vw !important;
+  margin-right: ($n / $count) * $container-width - 0.1vw !important;
 
   // BORDER!@>!@>!>!?>>????
   // $left: ($n / $count) * $container-width - 0.1vw;
