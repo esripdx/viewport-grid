@@ -1,28 +1,4 @@
 // Pre and Post Code
-// [class*="pre-"] {
-//   position: relative;
-// }
-
-// [class*="column-"] {
-//   [class*="pre-"] {
-//     left: -($column-gutter/2);
-//   }
-//   & [class*="pre-"] ~ [class*="column-"] {
-//     position: relative;
-//     left: -($column-gutter/2);
-//   }
-//   & [class*="pre-"] ~ [class*="column-"]:last-of-type {
-//     margin-right: -$column-gutter;
-//   }
-// }
-
-[class*="column-"] {
-  & [class*="pre-"] ~ [class*="column-"]:last-of-type {
-    // $right: ($n / $count) * $container-width - 0.1vw;
-    margin-right: -$column-gutter !important;
-  }
-}
-// Pre and Post Code
 
 // Small Columns
 @media screen and (max-width: $small - 1) {
@@ -30,9 +6,9 @@
     .#{$small-class}-pre-#{$n} {
       @include pre($n, $small-column-count);
     }
-    // [class*="column-"] .#{$small-class}-pre-#{$n}:first-child {
-    //   @include pre-calc($n, $small-column-count);
-    // }
+    [class*="column-"] .#{$small-class}-pre-#{$n}:first-child {
+      @include pre-calc($n, $small-column-count);
+    }
     .#{$small-class}-post-#{$n} {
       @include post($n, $small-column-count);
     }
@@ -45,9 +21,9 @@
     .#{$medium-class}-pre-#{$n} {
       @include pre($n, $medium-column-count);
     }
-    // [class*="column-"] .#{$medium-class}-pre-#{$n}:first-child {
-    //   @include pre-calc($n, $medium-column-count);
-    // }
+    [class*="column-"] .#{$medium-class}-pre-#{$n}:first-child {
+      @include pre-calc($n, $medium-column-count);
+    }
     .#{$medium-class}-post-#{$n} {
       @include post($n, $medium-column-count);
     }
@@ -60,9 +36,9 @@
     .pre-#{$n} {
       @include pre($n, $large-column-count);
     }
-    // [class*="column-"] .pre-#{$n}:first-child {
-    //   @include pre-calc($n, $large-column-count);
-    // }
+    [class*="column-"] .pre-#{$n}:first-child {
+      @include pre-calc($n, $large-column-count);
+    }
     .post-#{$n} {
       @include post($n, $large-column-count);
     }
@@ -73,15 +49,13 @@
 @media screen and (min-width: $large) {
   @for $n from 0 through $large-column-count {
     .pre-#{$n}  {
-      // margin-left: ($n / $large-column-count) * $container-max !important;
-      left: ($n / $large-column-count) * $container-max  !important;
-      margin-right: ($n / $large-column-count) * $container-max  !important;
+      margin-left: ($n / $large-column-count) * $container-max !important;
     }
-    // [class*="column-"] .pre-#{$n}:first-child {
-    //   $margin: ($n / $large-column-count) * $container-max;
-    //   $clear: $column-gutter / 2;
-    //   margin-left: calc(#{$margin} - #{$clear}) !important;
-    // }
+    [class*="column-"] .pre-#{$n}:first-child {
+      $margin: ($n / $large-column-count) * $container-max;
+      $clear: $column-gutter / 2;
+      margin-left: calc(#{$margin} - #{$clear}) !important;
+    }
     .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max !important; }
   }
 }
