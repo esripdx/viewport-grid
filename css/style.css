@@ -1,0 +1,186 @@
+/* Viewport Grid - 0.0.0 
+*   https://github.com/esripdx/viewport-grid
+*   Licensed ISC */
+
+nav .subnav:before, nav .subnav:after {
+  content: " ";
+  display: table; }
+nav .subnav:after {
+  clear: both; }
+
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden] {
+  display: none; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+.content-area, nav, .project-description {
+  font-family: "Source Code Pro", "Inconsolata", "Consolas", "Courier New", monospace;
+  font-weight: 400;
+  font-style: normal; }
+
+html {
+  font-size: 16px; }
+
+a {
+  color: #1f1f1f; }
+  a:hover {
+    color: blue; }
+
+code {
+  color: black; }
+
+.content-area {
+  color: blue;
+  border-left: 2px dashed blue;
+  border-right: 2px dashed blue;
+  padding: 0 0.5rem;
+  font-size: 1.125rem;
+  line-height: 1.66rem; }
+  .content-area p {
+    margin-top: 0;
+    margin-bottom: 1.66rem; }
+  .content-area ul {
+    padding: 0;
+    list-style-type: none; }
+
+nav {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em; }
+  nav ul {
+    width: 100%;
+    display: inline-block;
+    padding: 0;
+    text-align: right; }
+  nav li {
+    display: inline-block;
+    padding: 0.5em; }
+    nav li:first-child {
+      float: left;
+      padding-left: 0; }
+    nav li:last-child {
+      padding-right: 0; }
+  nav .subnav {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-top: none; }
+  nav .main-link {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    display: inline-block;
+    padding: 0.25em;
+    text-decoration: none; }
+  nav .index-link {
+    padding: 0.25em 1em;
+    border: 2px solid black; }
+    nav .index-link:hover {
+      border: 2px solid blue; }
+  nav .hamburger-container {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-right: 2px solid black;
+    text-align: center; }
+  nav .hamburger-link {
+    display: inline-block;
+    padding: 0.25em 0;
+    text-decoration: none; }
+
+.project-description {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  color: blue;
+  border-top: 6px solid blue;
+  border-bottom: 6px solid blue; }
+  @media screen and (max-width: 482px) {
+    .project-description {
+      font-size: 1rem; } }
+
+body {
+  background-color: rgba(253, 246, 227, 0.8); }
+
+img {
+  width: 100%;
+  max-width: 100%;
+  z-index: 1; }
+
+.grid-example [class*="column-"] span {
+  width: 100%;
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.6);
+  font-family: "Source Code Pro", "Inconsolata", "Consolas", "Courier New", monospace;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-top: 1em;
+  text-align: center; }
+
+.nested-demo [class*="column-"] [class*="column-"] span {
+  background-color: rgba(0, 0, 255, 0.4); }
+.nested-demo [class*="column-"] [class*="column-"] [class*="column-"] span {
+  background-color: rgba(0, 0, 255, 0.2); }
+.nested-demo [class*="column-"] [class*="column-"] [class*="column-"] [class*="column-"] span {
+  background-color: rgba(0, 0, 255, 0.1); }
+
+.gridlines {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -10; }
+  .gridlines div {
+    height: 100vh; }
+  .gridlines span {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.05);
+    border: 1px solid #cccccc; }
+
+.tester {
+  min-height: 1rem;
+  width: 100%;
+  display: block;
+  background-color: red; }
