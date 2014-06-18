@@ -1,6 +1,0 @@
-@mixin woodblock($image) {
-  -webkit-mask: url(../img/#{$image}.png) no-repeat center center;
-  -webkit-mask-size: cover;
-  mask: url(../img/#{$image}.png) no-repeat center center;
-  mask-size: cover;
-}
