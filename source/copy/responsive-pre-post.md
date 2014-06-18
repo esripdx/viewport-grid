@@ -1,0 +1,2 @@
+## Responsive Pre and Post
+Pre and Post can both have options for expliticly definined behavior at smaller screen sizes. The `tablet-pre-n`, `phone-pre-n`, `tablet-post-n', and `phone-post-n` are used.

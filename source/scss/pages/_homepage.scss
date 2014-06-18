@@ -1,0 +1,12 @@
+.project-description {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  @extend %Source;
+  text-align: center;
+  color: $blue;
+  border-top: 6px solid $blue;
+  border-bottom: 6px solid $blue;
+  @include respond-to(482px) {
+    font-size: 1rem;
+  }
+}
