@@ -4,6 +4,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
+    'gh-pages': {
+      options: {
+        base: 'site/build'
+      },
+      src: ['**']
+    },
+
     'connect': {
       'static': {
         options: {
@@ -135,4 +142,5 @@ module.exports = function(grunt) {
 
   // Default grunt task
   grunt.registerTask('default', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'connect', 'watch' ]);
+  grunt.registerTask('deploy', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'gh-pages']);
 };
