@@ -10,25 +10,23 @@
 
 // Responsive gutter-left and gutter-right
 @mixin responsive-gutter() {
-  @if $fold-grid == true {
 
-    // Medium
-    @media screen and (max-width: $medium - 1) {
-      @for $i from 0 through $horizontal-range {
-        .#{$medium-class}-gutter-left-#{$i}  { padding-left:     $i * $column-gutter; }
-        .#{$medium-class}-gutter-right-#{$i} { padding-right:  $i * $column-gutter; }
-      }
-    }
-
-    // Small
-    @media screen and (max-width: $small - 1) {
-      @for $i from 0 through $horizontal-range {
-        .#{$small-class}-gutter-left-#{$i}  { padding-left:     $i * $column-gutter; }
-        .#{$small-class}-gutter-right-#{$i} { padding-right:  $i * $column-gutter; }
-      }
-    }
+// Medium
+@media screen and (max-width: $medium - 1) {
+  @for $i from 0 through $horizontal-range {
+    .#{$medium-class}-gutter-left-#{$i}  { padding-left:     $i * $column-gutter; }
+    .#{$medium-class}-gutter-right-#{$i} { padding-right:  $i * $column-gutter; }
   }
 }
+
+// Small
+@media screen and (max-width: $small - 1) {
+  @for $i from 0 through $horizontal-range {
+    .#{$small-class}-gutter-left-#{$i}  { padding-left:     $i * $column-gutter; }
+    .#{$small-class}-gutter-right-#{$i} { padding-right:  $i * $column-gutter; }
+  }
+}
+
 
 .gutter-left-quarter  { @include gutter-left-quarter(); }
 .gutter-right-quarter { @include gutter-right-quarter(); }

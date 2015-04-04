@@ -1,14 +1,38 @@
 /*
-Error: Undefined variable: "$horizontal-range".
-        on line 41 of lib/grid/_gutter.scss
+Error: Undefined variable: "$fold-grid".
+        on line 13 of lib/grid/_gutter.scss, in `responsive-gutter'
+        from line 46 of lib/grid/_gutter.scss
         from line 9 of lib/viewport-grid.scss
 
+8: @import "grid/show-hide";
+9: @import "grid/gutter";
+
 Backtrace:
-lib/grid/_gutter.scss:41
+lib/grid/_gutter.scss:13:in `responsive-gutter'
+lib/grid/_gutter.scss:46
 lib/viewport-grid.scss:9
 /Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:257:in `visit_for'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/script/tree/operation.rb:64:in `_perform'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:297:in `visit_if'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:363:in `block (4 levels) in visit_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:363:in `map'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:363:in `block (3 levels) in visit_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:363:in `block (2 levels) in visit_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:84:in `perform_arguments'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:358:in `block in visit_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:98:in `with_mixin'
+/Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
 /Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Users/nwiselocal/.rvm/gems/ruby-2.0.0-p195/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
@@ -54,4 +78,4 @@ lib/viewport-grid.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$horizontal-range\".\A         on line 41 of lib/grid/_gutter.scss\A         from line 9 of lib/viewport-grid.scss"; }
+  content: "Error: Undefined variable: \"$fold-grid\".\A         on line 13 of lib/grid/_gutter.scss, in `responsive-gutter'\A         from line 46 of lib/grid/_gutter.scss\A         from line 9 of lib/viewport-grid.scss\A \A 8: @import \"grid/show-hide\";\A 9: @import \"grid/gutter\";"; }
