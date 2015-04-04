@@ -1,7 +1,7 @@
 @import "../legacy-support/ie8";
 
 // Columns Styles
-.container {
+.grid-container {
   @extend %clearfix;
   width: $container-width;
   max-width: $container-max;

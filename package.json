@@ -1,7 +1,7 @@
 {
   "name": "viewport-grid",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The perfect web grid.",
   "repository": "https://github.com/esripdx/viewport-grid",
   "license": "ISC",
