@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.1.0",
   "description": "The perfect web grid.",
-  "repository": "https://github.com/esripdx/viewport-grid",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/esripdx/viewport-grid.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
