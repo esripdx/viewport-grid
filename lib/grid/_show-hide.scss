@@ -2,13 +2,27 @@
 .show { @include show(); }
 .hide { @include hide(); }
 
+// Extra Large
+@media screen and (min-width: $large) {
+  .#{$small-class}-hide        {@include show();}
+  .#{$medium-class}-hide       {@include show();}
+  .#{$small-class}-show        {@include hide();}
+  .#{$medium-class}-show       {@include hide();}
+  .#{$medium-class}-only       {@include hide();}
+  .#{$extra-large-class}-show  {@include show();}
+  .#{$extra-large-class}-hide  {@include hide();}
+  .#{$extra-large-class}-only  {@include show();}
+}
+
 // Large
-@media screen and (min-width: $medium) {
+@media screen and (max-width: $large - 1) and (min-width: $medium) {
   .#{$small-class}-hide   {@include show();}
   .#{$medium-class}-hide  {@include show();}
   .#{$small-class}-show   {@include hide();}
   .#{$medium-class}-show  {@include hide();}
   .#{$medium-class}-only  {@include hide();}
+  .#{$large-class}-hide   {@include hide();}
+  .#{$extra-large-class}-only  {@include hide();}
 }
 
 // Medium
@@ -18,6 +32,7 @@
   .#{$small-class}-show   {@include hide();}
   .#{$medium-class}-show  {@include show();}
   .#{$medium-class}-only  {@include show();}
+  .#{$extra-large-class}-only  {@include hide();}
 }
 
 // Small
@@ -27,4 +42,5 @@
   .#{$small-class}-show   {@include show();}
   .#{$medium-class}-show  {@include show();}
   .#{$medium-class}-only  {@include hide();}
+  .#{$extra-large-class}-only  {@include hide();}
 }
