@@ -2,15 +2,18 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 0.2.0 - 2015-05-22
+## 1.0.0 - 2015-05-22
 ### Introduce Extra Large Columns
+- Default column classes
+- Tablet => Medium
+- Phone => Large
 - Increase large breakpoint to 1450px
 - add `extra-large-leader-n`
 	- trailer
 	- padding-leader
 	- padding-trailer
 - add `extra-large-column-n` to 36 columns
-- Remove `container-max` and `container-min` (non-breaking)
+- Remove `container-max` and `container-min`
 - `extra-large-hide`, `-show`, and `-only`
 
 ## 0.1.0 - 2015-04-04
