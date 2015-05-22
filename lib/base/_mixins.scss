@@ -20,13 +20,13 @@
 // Column Mixin
 @mixin column($n) {
   @extend %column-base;
-  width: ($n / $large-column-count) * $container-width - .01vw;
+  width: ($n / $large-column-count) * $container-width;
   max-width: ($n / $large-column-count) * $large-column-max;
 }
 
 // Column Width Mixin
 @mixin column-width($n) {
-  width: ($n / $large-column-count) * $container-width - .01vw;
+  width: ($n / $large-column-count) * $container-width;
   max-width: ($n / $large-column-count) * $large-column-max;
 }
 
@@ -43,7 +43,7 @@
 
 // Grid Pre
 @mixin pre($n, $count: $large-column-count) {
-  margin-left: ($n / $count) * $container-width - 0.1vw !important;
+  margin-left: ($n / $count) * $container-width !important;
 }
 
 @mixin pre-calc($n, $count: $large-column-count) {
@@ -54,5 +54,5 @@
 
 
 @mixin post($n, $count: $large-column-count) {
-  margin-right: ($n / $count) * $container-width - 0.1vw !important;
+  margin-right: ($n / $count) * $container-width !important;
 }
