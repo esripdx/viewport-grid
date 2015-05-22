@@ -16,18 +16,18 @@
         margin-right: -$column-gutter-fallback / 2;
       }
     }
-    @for $n from 1 through $large-column-count {
+    @for $n from 1 through $default-column-count {
       .column-#{$n} {
-        width: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+        width: ( ($n / $default-column-count) - $column-gutter-fallback ) * $adjusted-container;
         > .column-#{$n} {
           margin-left: -($column-gutter-fallback / 2);
         }
       }
       .pre-#{$n} {
-        margin-left: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+        margin-left: ( ($n / $default-column-count) - $column-gutter-fallback ) * $adjusted-container;
       }
       .post-#{$n} {
-        margin-right: ( ($n / $large-column-count) - $column-gutter-fallback ) * $adjusted-container;
+        margin-right: ( ($n / $default-column-count) - $column-gutter-fallback ) * $adjusted-container;
       }
     }
   }
