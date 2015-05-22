@@ -1,46 +1,49 @@
 // Colors
-$white:                 #FFFFFF !default;
-$off-white:             #F9F9F9 !default;
-$lightest-gray:         #EDEDED !default;
-$lighter-gray:          #CCCCCC !default;
-$light-gray:            #A6A6A6 !default;
-$gray:                  #808080 !default;
-$dark-gray:             #595959 !default;
-$darker-gray:           #333333 !default;
-$darkest-gray:          #1F1F1F !default;
-$off-black:             #050505 !default;
-$black:                 #000000 !default;
+$white:                 #FFFFFF               !default;
+$off-white:             #F9F9F9               !default;
+$lightest-gray:         #EDEDED               !default;
+$lighter-gray:          #CCCCCC               !default;
+$light-gray:            #A6A6A6               !default;
+$gray:                  #808080               !default;
+$dark-gray:             #595959               !default;
+$darker-gray:           #333333               !default;
+$darkest-gray:          #1F1F1F               !default;
+$off-black:             #050505               !default;
+$black:                 #000000               !default;
 
 // Breakpoints
-$small:                    480px    !default;
-$medium:                   860px    !default;
-$large:                    1280px   !default;
+$small:                 480px              !default;
+$medium:                860px              !default;
+$large:                 1450px             !default;
+
 
 // Grid Settings
-$vw-ratio:                 0.9;
-$container-width:          $vw-ratio * 100vw     !default;
-$container-min:            0        !default;
-$container-max:            $large * $vw-ratio !default;
-$column-gutter:            1rem     !default;
+$vw-ratio:                 0.98               !default;
+$container-width:          $vw-ratio * 100vw  !default;
+$column-gutter:            1rem               !default;
 
 // Grid Fallback Options
-$ie8-support:              false    !default;
-$column-gutter-fallback:   20px     !default;
-$container-width-fallback: 960px    !default;
+$ie8-support:              false              !default;
+$column-gutter-fallback:   20px               !default;
+$container-width-fallback: 960px              !default;
 
 // Large
-$large-class:              'column' !default;
-$large-column-count:       24       !default;
+$extra-large-class:        'extra-large'      !default;
+$extra-large-column-count: 36                 !default;
+
+// Large
+$large-class:              'column'           !default;
+$large-column-count:       24                 !default;
 
 // Medium
-$medium-class:             'tablet' !default;
-$medium-column-count:      12       !default;
+$medium-class:             'tablet'           !default;
+$medium-column-count:      12                 !default;
 
 // Small
-$small-class:              'phone'  !default;
-$small-column-count:       6        !default;
+$small-class:              'phone'            !default;
+$small-column-count:       6                  !default;
 
 // Rhythm
-$baseline:                 1.5rem   !default;
-$vertical-range:           6        !default;
+$baseline:                 1.5rem             !default;
+$vertical-range:           6                  !default;
 $horizontal-range:         4                  !default;
