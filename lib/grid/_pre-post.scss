@@ -1,37 +1,32 @@
 // Pre and Post Code
 
-// Small Columns
-@media screen and (max-width: $small - 1) {
-  @for $n from 0 through $small-column-count {
-    .#{$small-class}-pre-#{$n} {
-      @include pre($n, $small-column-count);
-    }
-    [class*="column-"] .#{$small-class}-pre-#{$n}:first-child {
-      @include pre-calc($n, $small-column-count);
-    }
-    .#{$small-class}-post-#{$n} {
-      @include post($n, $small-column-count);
-    }
-  }
-}
 
-// Medium Columns
-@media screen and (max-width: $medium - 1) {
-  @for $n from 0 through $medium-column-count {
-    .#{$medium-class}-pre-#{$n} {
-      @include pre($n, $medium-column-count);
+// Extra Large Pre and Post
+@media screen and (min-width: $large) {
+  @for $n from 0 through $extra-large-column-count {
+    .#{$extra-large-class}-pre-#{$n} {
+      @include pre($n, $extra-large-column-count);
     }
-    [class*="column-"] .#{$medium-class}-pre-#{$n}:first-child {
-      @include pre-calc($n, $medium-column-count);
+    [class*="column-"] .#{$extra-large-class}-pre-#{$n}:first-child {
+      @include pre-calc($n, $extra-large-column-count);
     }
-    .#{$medium-class}-post-#{$n} {
-      @include post($n, $medium-column-count);
+    .#{$extra-large-class}-post-#{$n} {
+      @include post($n, $extra-large-column-count);
+    }
+    .pre-#{$n} {
+      @include pre($n, $extra-large-column-count);
+    }
+    [class*="column-"] .pre-#{$n}:first-child {
+      @include pre-calc($n, $extra-large-column-count);
+    }
+    .post-#{$n} {
+      @include post($n, $extra-large-column-count);
     }
   }
 }
 
 // Large Columns
-@media screen and (min-width: $medium) {
+@media screen and (max-width: $large - 1) {
   @for $n from 0 through $large-column-count {
     .pre-#{$n} {
       @include pre($n, $large-column-count);
@@ -45,17 +40,54 @@
   }
 }
 
-// Fixed Pre and Post
-@media screen and (min-width: $large) {
-  @for $n from 0 through $large-column-count {
-    .pre-#{$n}  {
-      margin-left: ($n / $large-column-count) * $container-max !important;
+
+// Medium Columns
+@media screen and (max-width: $medium - 1) {
+  @for $n from 0 through $medium-column-count {
+    .#{$medium-class}-pre-#{$n} {
+      @include pre($n, $medium-column-count);
+    }
+    [class*="column-"] .#{$medium-class}-pre-#{$n}:first-child {
+      @include pre-calc($n, $medium-column-count);
+    }
+    .#{$medium-class}-post-#{$n} {
+      @include post($n, $medium-column-count);
+    }
+    // Reset Default pre
+    .pre-#{$n} {
+      @include pre(0, $medium-column-count);
     }
     [class*="column-"] .pre-#{$n}:first-child {
-      $margin: ($n / $large-column-count) * $container-max;
-      $clear: $column-gutter / 2;
-      margin-left: calc(#{$margin} - #{$clear}) !important;
+      @include pre-calc(0, $medium-column-count);
     }
-    .post-#{$n} { margin-right: ($n / $large-column-count) * $container-max !important; }
+    .post-#{$n} {
+      @include post(0, $medium-column-count);
+    }
   }
 }
+
+// Small Columns
+@media screen and (max-width: $small - 1) {
+  @for $n from 0 through $small-column-count {
+    .#{$small-class}-pre-#{$n} {
+      @include pre($n, $small-column-count);
+    }
+    [class*="column-"] .#{$small-class}-pre-#{$n}:first-child {
+      @include pre-calc($n, $small-column-count);
+    }
+    .#{$small-class}-post-#{$n} {
+      @include post($n, $small-column-count);
+    }
+    // Reset Default Pre
+    .pre-#{$n} {
+      @include pre(0, $small-column-count);
+    }
+    [class*="column-"] .pre-#{$n}:first-child {
+      @include pre-calc(0, $small-column-count);
+    }
+    .post-#{$n} {
+      @include post(0, $small-column-count);
+    }
+  }
+}
+
