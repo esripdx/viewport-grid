@@ -12,10 +12,10 @@
 // Extra Large
 @media screen and (min-width: $large) {
   @for $i from 0 through $vertical-range {
-    .#{$extra-large-class}-leader-#{$i}          { margin-top:     $i * $baseline; }
-    .#{$extra-large-class}-trailer-#{$i}         { margin-bottom:  $i * $baseline; }
-    .#{$extra-large-class}-padding-leader-#{$i}  { padding-top:    $i * $baseline; }
-    .#{$extra-large-class}-padding-trailer-#{$i} { padding-bottom: $i * $baseline; }
+    .#{$large-class}-leader-#{$i}          { margin-top:     $i * $baseline; }
+    .#{$large-class}-trailer-#{$i}         { margin-bottom:  $i * $baseline; }
+    .#{$large-class}-padding-leader-#{$i}  { padding-top:    $i * $baseline; }
+    .#{$large-class}-padding-trailer-#{$i} { padding-bottom: $i * $baseline; }
   }
 }
 

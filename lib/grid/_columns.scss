@@ -37,32 +37,32 @@
 
 // Extra Large Columns
 @media screen and (min-width: $large) {
-  @for $n from 1 through $extra-large-column-count {
+  @for $n from 1 through $large-column-count {
     .column-#{$n} {
-      width: ($n / $extra-large-column-count) * $container-width;
+      width: ($n / $large-column-count) * $container-width;
       > .column-#{$n} {
         margin-left: -($column-gutter/2);
       }
     }
   }
-  @for $n from 1 through $extra-large-column-count {
-    .#{$extra-large-class}-column-#{$n}  {
-      width: ($n / $extra-large-column-count) * $container-width;
+  @for $n from 1 through $large-column-count {
+    .#{$large-class}-column-#{$n}  {
+      width: ($n / $large-column-count) * $container-width;
     }
   }
-  .#{$extra-large-class}-first-column {
+  .#{$large-class}-first-column {
     margin-left: -($column-gutter / 2);
   }
-  .#{$extra-large-class}-last-column {
+  .#{$large-class}-last-column {
     margin-right: -($column-gutter / 2);
   }
 }
 
 // Large Columns
 @media screen and (max-width: $large - 1) {
-  @for $n from 1 through $large-column-count {
+  @for $n from 1 through $default-column-count {
     .column-#{$n} {
-      width: ($n / $large-column-count) * $container-width;
+      width: ($n / $default-column-count) * $container-width;
       > .column-#{$n} {
         margin-left: -($column-gutter/2);
       }

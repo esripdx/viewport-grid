@@ -9,9 +9,9 @@
   .#{$small-class}-show        {@include hide();}
   .#{$medium-class}-show       {@include hide();}
   .#{$medium-class}-only       {@include hide();}
-  .#{$extra-large-class}-show  {@include show();}
-  .#{$extra-large-class}-hide  {@include hide();}
-  .#{$extra-large-class}-only  {@include show();}
+  .#{$large-class}-show  {@include show();}
+  .#{$large-class}-hide  {@include hide();}
+  .#{$large-class}-only  {@include show();}
 }
 
 // Large
@@ -21,8 +21,7 @@
   .#{$small-class}-show   {@include hide();}
   .#{$medium-class}-show  {@include hide();}
   .#{$medium-class}-only  {@include hide();}
-  .#{$large-class}-hide   {@include hide();}
-  .#{$extra-large-class}-only  {@include hide();}
+  .#{$large-class}-only  {@include hide();}
 }
 
 // Medium
@@ -32,7 +31,7 @@
   .#{$small-class}-show   {@include hide();}
   .#{$medium-class}-show  {@include show();}
   .#{$medium-class}-only  {@include show();}
-  .#{$extra-large-class}-only  {@include hide();}
+  .#{$large-class}-only  {@include hide();}
 }
 
 // Small
@@ -42,5 +41,5 @@
   .#{$small-class}-show   {@include show();}
   .#{$medium-class}-show  {@include show();}
   .#{$medium-class}-only  {@include hide();}
-  .#{$extra-large-class}-only  {@include hide();}
+  .#{$large-class}-only  {@include hide();}
 }
