@@ -28,19 +28,18 @@ $column-gutter-fallback:   20px               !default;
 $container-width-fallback: 960px              !default;
 
 // Large
-$extra-large-class:        'extra-large'      !default;
-$extra-large-column-count: 36                 !default;
+$large-class:        'large'            !default;
+$large-column-count: 36                 !default;
 
 // Large
-$large-class:              'column'           !default;
-$large-column-count:       24                 !default;
+$default-column-count:       24                 !default;
 
 // Medium
-$medium-class:             'tablet'           !default;
+$medium-class:             'medium'           !default;
 $medium-column-count:      12                 !default;
 
 // Small
-$small-class:              'phone'            !default;
+$small-class:              'small'            !default;
 $small-column-count:       6                  !default;
 
 // Rhythm
