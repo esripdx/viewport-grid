@@ -14,9 +14,19 @@ If you'd like to use the viewport grid as a standalone css file, just copy `dist
 
 If you'd like to use the viewport grid as a sass library, you'll find it inside of `lib`. Customize your grid by editing the values in `_config.scss`.
 
+### NPM
+
+To install viewport-grid via npm, you can simply run:
+
+```
+npm install esripdx/viewport-grid
+```
+
+The main Sass file will be in `node_modules/viewport-grid/lib/viewport-grid.scss`.
+
 ### Bower
 
-The easiest way to use viewport grid as a sass library is through Bower. Assuming you have already installed bower, just type `bower install viewport-grid --save`.
+Assuming you have already installed bower, just type `bower install viewport-grid --save`.
 
 Then import it as a library in your main `styles.scss` file like this:
 
@@ -33,6 +43,8 @@ Note, this will import everything, including the static classes. A separate file
 ## Contributing
 
 Pull requests are welcome. In lieu of a formal styleguide, we ask that you simply try to maintain the formatting that is already in place.
+
+To set up a local development environment you must have node and grunt installed on your system. Then simply clone the project, `npm install`, and `grunt` to run a dev server.
 
 ## License
 
