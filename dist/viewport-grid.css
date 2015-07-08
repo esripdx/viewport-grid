@@ -1,4 +1,4 @@
-/* Viewport Grid - 1.0.0 
+/* Viewport Grid - 1.0.1 
 *   https://github.com/esripdx/viewport-grid
 *   Licensed ISC */
 
@@ -485,6 +485,45 @@
   .column-12 {
     width: 98vw; }
 
+  .column-12 {
+    width: 98vw; }
+
+  .column-13 {
+    width: 98vw; }
+
+  .column-14 {
+    width: 98vw; }
+
+  .column-15 {
+    width: 98vw; }
+
+  .column-16 {
+    width: 98vw; }
+
+  .column-17 {
+    width: 98vw; }
+
+  .column-18 {
+    width: 98vw; }
+
+  .column-19 {
+    width: 98vw; }
+
+  .column-20 {
+    width: 98vw; }
+
+  .column-21 {
+    width: 98vw; }
+
+  .column-22 {
+    width: 98vw; }
+
+  .column-23 {
+    width: 98vw; }
+
+  .column-24 {
+    width: 98vw; }
+
   .medium-column-1 {
     width: 8.16667vw; }
 
@@ -545,22 +584,61 @@
   .column-6 {
     width: 98vw; }
 
-  .medium-column-1 {
-    width: 16.33333vw; }
+  .column-6 {
+    width: 98vw; }
 
-  .medium-column-2 {
-    width: 32.66667vw; }
+  .column-7 {
+    width: 98vw; }
 
-  .medium-column-3 {
-    width: 49vw; }
+  .column-8 {
+    width: 98vw; }
 
-  .medium-column-4 {
-    width: 65.33333vw; }
+  .column-9 {
+    width: 98vw; }
 
-  .medium-column-5 {
-    width: 81.66667vw; }
+  .column-10 {
+    width: 98vw; }
 
-  .medium-column-6 {
+  .column-11 {
+    width: 98vw; }
+
+  .column-12 {
+    width: 98vw; }
+
+  .column-13 {
+    width: 98vw; }
+
+  .column-14 {
+    width: 98vw; }
+
+  .column-15 {
+    width: 98vw; }
+
+  .column-16 {
+    width: 98vw; }
+
+  .column-17 {
+    width: 98vw; }
+
+  .column-18 {
+    width: 98vw; }
+
+  .column-19 {
+    width: 98vw; }
+
+  .column-20 {
+    width: 98vw; }
+
+  .column-21 {
+    width: 98vw; }
+
+  .column-22 {
+    width: 98vw; }
+
+  .column-23 {
+    width: 98vw; }
+
+  .column-24 {
     width: 98vw; }
 
   .small-column-1 {
