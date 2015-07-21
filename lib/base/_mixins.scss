@@ -5,29 +5,15 @@
           box-sizing: $value;
 }
 
-// Clearfix Mixin
-@mixin clearfix() {
-  @extend %clearfix;
-}
-
-// Respond To
-@mixin respond-to($type, $m: max-width) {
-  @media screen and ($m: $type) {
-    @content;
-  }
-}
-
 // Column Mixin
 @mixin column($n) {
   @extend %column-base;
   width: ($n / $default-column-count) * $container-width;
-  max-width: ($n / $default-column-count) * $large-column-max;
 }
 
 // Column Width Mixin
 @mixin column-width($n) {
-  width: ($n / $default-column-count) * $container-width;
-  max-width: ($n / $default-column-count) * $large-column-max;
+  width: ($n / $large-column-count) * $container-width;
 }
 
 // Show

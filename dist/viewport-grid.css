@@ -2,18 +2,11 @@
 *   https://github.com/esripdx/viewport-grid
 *   Licensed ISC */
 
-.grid-container:before, [class*="column-"]:last-of-type:before, .grid-container:after, [class*="column-"]:last-of-type:after {
+[class*="column-"]:last-of-type:before, .grid-container:before, [class*="column-"]:last-of-type:after, .grid-container:after {
   content: " ";
   display: table; }
-.grid-container:after, [class*="column-"]:last-of-type:after {
+[class*="column-"]:last-of-type:after, .grid-container:after {
   clear: both; }
-
-.grid-container {
-  width: 98vw;
-  padding-right: 0;
-  padding-left: 0;
-  margin-right: auto;
-  margin-left: auto; }
 
 [class*="column-"] {
   -webkit-box-sizing: border-box;
@@ -27,6 +20,13 @@
     margin-left: -0.5rem; }
   [class*="column-"] [class*="column-"]:last-of-type {
     margin-right: -0.5rem; }
+
+.grid-container {
+  width: 98vw;
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto; }
 
 .first-column {
   margin-left: -0.5rem; }
@@ -639,6 +639,63 @@
     width: 98vw; }
 
   .column-24 {
+    width: 98vw; }
+
+  .medium-column-6 {
+    width: 98vw; }
+
+  .medium-column-7 {
+    width: 98vw; }
+
+  .medium-column-8 {
+    width: 98vw; }
+
+  .medium-column-9 {
+    width: 98vw; }
+
+  .medium-column-10 {
+    width: 98vw; }
+
+  .medium-column-11 {
+    width: 98vw; }
+
+  .medium-column-12 {
+    width: 98vw; }
+
+  .medium-column-13 {
+    width: 98vw; }
+
+  .medium-column-14 {
+    width: 98vw; }
+
+  .medium-column-15 {
+    width: 98vw; }
+
+  .medium-column-16 {
+    width: 98vw; }
+
+  .medium-column-17 {
+    width: 98vw; }
+
+  .medium-column-18 {
+    width: 98vw; }
+
+  .medium-column-19 {
+    width: 98vw; }
+
+  .medium-column-20 {
+    width: 98vw; }
+
+  .medium-column-21 {
+    width: 98vw; }
+
+  .medium-column-22 {
+    width: 98vw; }
+
+  .medium-column-23 {
+    width: 98vw; }
+
+  .medium-column-24 {
     width: 98vw; }
 
   .small-column-1 {

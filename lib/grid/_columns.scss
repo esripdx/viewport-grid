@@ -13,18 +13,7 @@
 }
 
 [class*="column-"] {
-  @include box-sizing(border-box);
-  width: $container-width;
-  padding: 0 $column-gutter / 2;
-  margin: 0;
-  float: left;
-  [class*="column-"]:first-of-type {
-    margin-left: -$column-gutter / 2;
-  }
-  [class*="column-"]:last-of-type {
-    margin-right: -$column-gutter / 2;
-  }
-  &:last-of-type { @extend %clearfix; }
+  @extend %column-base;
 }
 
 .first-column {
@@ -95,8 +84,6 @@
   }
 }
 
-
-
 // Small Columns
 @media screen and (max-width: $small - 1) {
   @for $n from 1 through $small-column-count {
@@ -125,12 +112,6 @@
   .#{$small-class}-last-column {
     margin-right: -($column-gutter / 2);
   }
-}
-
-
-// Small First/Last
-@media screen and (max-width: $small -1) {
-
 }
 
 @if $ie8-support == true {
