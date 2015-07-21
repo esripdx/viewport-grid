@@ -1,6 +1,6 @@
 {
   "name": "viewport-grid",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "dist/viewport-grid.css",
   "homepage": "http://esripdx.github.io/viewport-grid/",
   "authors": [
