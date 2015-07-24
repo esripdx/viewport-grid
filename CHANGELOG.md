@@ -2,7 +2,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 1.0.1 - 2015-05-22
+## 1.0.2 - 2015-07-21
+### Fix column mixin
+- Can now call `@include column($n)` from sass to get a properly sized column
+- Remove some unused mixins
+
+## 1.0.1 - 2015-07-08
 ### Extra Large Column Collapse Bugfix
 - Columns properly collapse as screen size shrinks
 
