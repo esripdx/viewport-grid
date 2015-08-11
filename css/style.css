@@ -1,4 +1,4 @@
-/* Viewport Grid - 0.0.0 
+/* Viewport Grid - 1.0.3 
 *   https://github.com/esripdx/viewport-grid
 *   Licensed ISC */
 
@@ -55,12 +55,12 @@ html {
   font-size: 16px; }
 
 a {
-  color: #1f1f1f; }
+  color: #1F1F1F; }
   a:hover {
     color: blue; }
 
 code {
-  color: black; }
+  color: #000000; }
 
 .content-area {
   color: blue;
@@ -97,7 +97,7 @@ nav {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border: 2px solid black;
+    border: 2px solid #000000;
     border-top: none; }
   nav .main-link {
     -webkit-box-sizing: border-box;
@@ -109,14 +109,14 @@ nav {
     text-decoration: none; }
   nav .index-link {
     padding: 0.25em 1em;
-    border: 2px solid black; }
+    border: 2px solid #000000; }
     nav .index-link:hover {
       border: 2px solid blue; }
   nav .hamburger-container {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    border-right: 2px solid black;
+    border-right: 2px solid #000000;
     text-align: center; }
   nav .hamburger-link {
     display: inline-block;
@@ -130,10 +130,10 @@ nav {
   color: blue;
   border-top: 6px solid blue;
   border-bottom: 6px solid blue; }
-  @media screen and (max-width: 482px) {
-    .project-description {
-      font-size: 1rem; } }
 
+@media screen and (min-width: 482px) {
+  .project-description {
+    font-size: 1rem; } }
 body {
   background-color: rgba(253, 246, 227, 0.8); }
 
@@ -145,13 +145,14 @@ img {
 .grid-example [class*="column-"] span {
   width: 100%;
   display: block;
-  color: white;
+  color: #FFFFFF;
   background-color: rgba(0, 0, 255, 0.6);
   font-family: "Source Code Pro", "Inconsolata", "Consolas", "Courier New", monospace;
   padding-top: 2em;
   padding-bottom: 2em;
   margin-top: 1em;
-  text-align: center; }
+  text-align: center;
+  word-wrap: break-word; }
 
 .nested-demo [class*="column-"] [class*="column-"] span {
   background-color: rgba(0, 0, 255, 0.4); }
@@ -177,10 +178,12 @@ img {
     width: 100%;
     display: inline-block;
     background-color: rgba(128, 128, 128, 0.05);
-    border: 1px solid #cccccc; }
+    border: 1px solid #CCCCCC; }
 
 .tester {
   min-height: 1rem;
   width: 100%;
   display: block;
   background-color: red; }
+
+/*# sourceMappingURL=style.css.map */

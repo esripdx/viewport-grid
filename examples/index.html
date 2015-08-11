@@ -14,7 +14,19 @@
 </head>
 <body>
   <div class="gridlines">
-    <div class="container">
+    <div class="grid-container">
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
+      <div class="column-1"><span></span></div>
       <div class="column-1"><span></span></div>
       <div class="column-1"><span></span></div>
       <div class="column-1"><span></span></div>
@@ -41,9 +53,10 @@
       <div class="column-1"><span></span></div>
     </div>
   </div>
-  <div class="container">
+
+  <div class="grid-container">
     <div class="column-24">
-    <nav class="column-6 pre-9 tablet-pre-3 phone-pre-0 post-1 leader-1">
+    <nav class="column-6 pre-9 medium-pre-3 small-pre-0 post-1 leader-1 extra-large-leader-2 extra-large-trailer-2 extra-large-pre-13">
       <a class="main-link index-link" href="../">Viewport Grid</a>
       <div class="subnav">
         <div class="column-6">
@@ -73,7 +86,7 @@
   <div class="page-content examples">
     
  <!-- D E M O -->
- <div class="container grid-example leader-1">
+ <div class="grid-container grid-example leader-1">
      <div class="column-24"><span>24</span></div>
      <div class="column-1"><span>1</span></div>
      <div class="column-1"><span>1</span></div>
@@ -101,18 +114,18 @@
      <div class="column-1"><span>1</span></div>
  </div>
 
- <div class="container leader-1">
+ <div class="grid-container leader-1">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="columns">Columns</h2>
-<p>In the VW Grid, a column is a constant unit of measure. The width of a column is dynamic, but always between a fixed range. Columns will never get too large or or too small. As the viewport get smaller, and the columns near the bottom of their range, VW Grid will simply put less columns on the page. By default, large screens hold 24 columns, medium tablet-sized screens hold 12, and phone-sized screens hold 6. VW Grid will fold columns at these breakpoints. That means an element that is 3 columns wide will always be 3 columns wide, no matter how big or small the screen.</p>
+<p>In the VW Grid, a column is a constant unit of measure. The width of a column is dynamic, but always between a fixed range. Columns will never get too large or or too small. As the viewport get smaller, and the columns near the bottom of their range, VW Grid will simply put less columns on the page. By default, large screens hold 24 columns, medium medium-sized screens hold 12, and small-sized screens hold 6. VW Grid will fold columns at these breakpoints. That means an element that is 3 columns wide will always be 3 columns wide, no matter how big or small the screen.</p>
 <p>On large screens, 3 columns out of 24 is proportionally a small peice of screen real estate. On Phones, VW Grid will still leave the element at 3 columns wide -- only now it&#39;s proportionally more real estate, as 3/6 columns is more significant than 3/24.</p>
 
      </div>
    </div>
  </div>
 
- <div class="container grid-example leader-1">
+ <div class="grid-container grid-example leader-1">
      <div class="column-1"><span>1</span></div>
      <div class="column-23"><span>.column-23</span></div>
      <div class="column-2"><span>2</span></div>
@@ -139,178 +152,178 @@
      <div class="column-12"><span>.column-12</span></div>
  </div>
 
- <div class="container leader-5">
+ <div class="grid-container leader-5">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="responsive-columns">Responsive Columns</h2>
-<p>The width of elements can be explicitly defined for breakpoints where columns would normally fold by default. This can be done with the <code>phone-column-n</code> and <code>tablet-column-n</code> classes. For example, <code>.column-12</code> would default to the full 12/12 column width at a tablet size. Adding to the same element <code>.tablet-column-6</code> would prevent the default behavior, and at a tablet viewport, the element would be 6/12 columns.</p>
+<p>The width of elements can be explicitly defined for breakpoints where columns would normally fold by default. This can be done with the <code>small-column-n</code> and <code>medium-column-n</code> classes. For example, <code>.column-12</code> would default to the full 12/12 column width at a tablet size. Adding to the same element <code>.medium-column-6</code> would prevent the default behavior, and at a tablet viewport, the element would be 6/12 columns.</p>
 
      </div>
    </div>
  </div>
 
- <div class="container grid-example leader-1">
+ <div class="grid-container grid-example leader-1">
   <div class="column-24">
-     <div class="column-1 tablet-column-4 phone-column-1">
-       <span class="tablet-hide">1</span>
-       <span class="tablet-only">.tablet-column-4</span>
-       <span class="phone-show">.phone-column-1</span>
+     <div class="column-1 medium-column-4 small-column-1">
+       <span class="medium-hide">1</span>
+       <span class="medium-only">.medium-column-4</span>
+       <span class="small-show">.small-column-1</span>
      </div>
-     <div class="column-23 tablet-column-8 phone-column-5">
-       <span class="tablet-hide">.column-23</span>
-       <span class="tablet-only">.tablet-column-8</span>
-       <span class="phone-show">.phone-column-5</span>
-     </div>
-   </div>
-
-   <div class="column-24">
-     <div class="column-2 tablet-column-8 phone-column-5">
-       <span class="tablet-hide">2</span>
-       <span class="tablet-only">.tablet-column-8</span>
-       <span class="phone-show">.phone-column-5</span>
-     </div>
-     <div class="column-22 tablet-column-4 phone-column-1">
-       <span class="tablet-hide">.column-22</span>
-       <span class="tablet-only">.tablet-column-4</span>
-       <span class="phone-show">.phone-column-1</span>
+     <div class="column-23 medium-column-8 small-column-5">
+       <span class="medium-hide">.column-23</span>
+       <span class="medium-only">.medium-column-8</span>
+       <span class="small-show">.small-column-5</span>
      </div>
    </div>
 
    <div class="column-24">
-     <div class="column-3 tablet-column-5 phone-column-2">
-       <span class="tablet-hide">.column-3</span>
-       <span class="tablet-only">.tablet-5</span>
-       <span class="phone-show">.phone-column-2</span>
+     <div class="column-2 medium-column-8 small-column-5">
+       <span class="medium-hide">2</span>
+       <span class="medium-only">.medium-column-8</span>
+       <span class="small-show">.small-column-5</span>
      </div>
-     <div class="column-21 tablet-column-7 phone-column-4">
-       <span class="tablet-hide">.column-21</span>
-       <span class="tablet-only">.tablet-7</span>
-       <span class="phone-show">.phone-column-4</span>
-     </div>
-   </div>
-
-   <div class="column-24">
-     <div class="column-4 tablet-column-7 phone-column-4">
-       <span class="tablet-hide">.column-4</span>
-       <span class="tablet-only">.tablet-7</span>
-       <span class="phone-show">.phone-column-4</span>
-     </div>
-     <div class="column-20 tablet-column-5 phone-column-2">
-       <span class="tablet-hide">.column-20</span>
-       <span class="tablet-only">.tablet-5</span>
-       <span class="phone-show">.phone-column-2</span>
+     <div class="column-22 medium-column-4 small-column-1">
+       <span class="medium-hide">.column-22</span>
+       <span class="medium-only">.medium-column-4</span>
+       <span class="small-show">.small-column-1</span>
      </div>
    </div>
 
    <div class="column-24">
-     <div class="column-5 tablet-column-6 phone-column-3">
-       <span class="tablet-hide">.column-5</span>
-       <span class="tablet-only">.tablet-6</span>
-       <span class="phone-show">.phone-column-3</span>
+     <div class="column-3 medium-column-5 small-column-2">
+       <span class="medium-hide">.column-3</span>
+       <span class="medium-only">.medium-5</span>
+       <span class="small-show">.small-column-2</span>
      </div>
-     <div class="column-19 tablet-column-6 phone-column-3">
-       <span class="tablet-hide">.column-19</span>
-       <span class="tablet-only">.tablet-6</span>
-       <span class="phone-show">.phone-column-3</span>
+     <div class="column-21 medium-column-7 small-column-4">
+       <span class="medium-hide">.column-21</span>
+       <span class="medium-only">.medium-7</span>
+       <span class="small-show">.small-column-4</span>
      </div>
    </div>
 
    <div class="column-24">
-     <div class="column-6 tablet-column-6 phone-column-3">
-       <span class="tablet-hide">.column-6</span>
-       <span class="tablet-only">.tablet-6</span>
-       <span class="phone-show">.phone-column-3</span>
+     <div class="column-4 medium-column-7 small-column-4">
+       <span class="medium-hide">.column-4</span>
+       <span class="medium-only">.medium-7</span>
+       <span class="small-show">.small-column-4</span>
      </div>
-     <div class="column-18 column-6 tablet-column-6 phone-column-3">
-       <span class="tablet-hide">.column-18</span>
-       <span class="tablet-only">.tablet-6</span>
-       <span class="phone-show">.phone-column-3</span>
+     <div class="column-20 medium-column-5 small-column-2">
+       <span class="medium-hide">.column-20</span>
+       <span class="medium-only">.medium-5</span>
+       <span class="small-show">.small-column-2</span>
+     </div>
+   </div>
+
+   <div class="column-24">
+     <div class="column-5 medium-column-6 small-column-3">
+       <span class="medium-hide">.column-5</span>
+       <span class="medium-only">.medium-6</span>
+       <span class="small-show">.small-column-3</span>
+     </div>
+     <div class="column-19 medium-column-6 small-column-3">
+       <span class="medium-hide">.column-19</span>
+       <span class="medium-only">.medium-6</span>
+       <span class="small-show">.small-column-3</span>
+     </div>
+   </div>
+
+   <div class="column-24">
+     <div class="column-6 medium-column-6 small-column-3">
+       <span class="medium-hide">.column-6</span>
+       <span class="medium-only">.medium-6</span>
+       <span class="small-show">.small-column-3</span>
+     </div>
+     <div class="column-18 column-6 medium-column-6 small-column-3">
+       <span class="medium-hide">.column-18</span>
+       <span class="medium-only">.medium-6</span>
+       <span class="small-show">.small-column-3</span>
      </div>
    </div>
  </div>
 
- <div class="container leader-5">
+ <div class="grid-container leader-5">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="nested-columns">Nested Columns</h2>
 <p>Contrary to other flexible-width grid systems, VW Grid columns do not change behavior when nested. Because a column is a constant measurement relative the size of the viewport, nested columns still span the same width as their non-nested counterparts. An element with <code>.column-6</code> nested within an element with <code>.column-12</code> is the same size as an un-nested <code>.column-6</code>. Further, clearing of the column-gutter is taken care of for you with <code>:first-child</code> and <code>:last-child</code> psuedo-selectors on all column classes.</p>
-<p>Column-folding behavior is almost entirely automatic with Viewport Grid. The only exception is gutter clearing behaviors on deeply nested items after column folding occurs - in some situations we can not know what columns are now first or last in their rows. This will cause the column to be inset from the edge of the container. The example below solves this by introducing <code>first-column</code> classes, along with <code>tablet-first-column</code> and <code>phone-first-column</code>.</p>
+<p>Column-folding behavior is almost entirely automatic with Viewport Grid. The only exception is gutter clearing behaviors on deeply nested items after column folding occurs - in some situations we can not know what columns are now first or last in their rows. This will cause the column to be inset from the edge of the container. The example below solves this by introducing <code>first-column</code> classes, along with <code>medium-first-column</code> and <code>small-first-column</code>.</p>
 <p>In this example, the more transparent the blue, the deepter the column is nested. There are four levels of nesting in this example.</p>
 
      </div>
    </div>
  </div>
 
- <div class="container grid-example nested-demo leader-1">
- <div class="column-18 tablet-column-8">
-     <span class='tablet-hide'>.column-18</span>
-     <span class='tablet-show'>.tablet-column-8</span>
+ <div class="grid-container grid-example nested-demo leader-1">
+ <div class="column-18 medium-column-8">
+     <span class='medium-hide'>.column-18</span>
+     <span class='medium-show'>.medium-column-8</span>
 
-     <div class="column-4 tablet-column-4">
-       <span class='tablet-hide'>.column-4</span>
-       <span class='tablet-show'>.tablet-column-4</span>
+     <div class="column-4 medium-column-4">
+       <span class='medium-hide'>.column-4</span>
+       <span class='medium-show'>.medium-column-4</span>
 
-       <div class="column-1 tablet-column-4"><span class='tablet-hide'>1</span>
-         <span class='tablet-show'>.tablet-column-4</span></div>
-      <div class="column-1 tablet-column-4 tablet-first-column"><span class='tablet-hide'>1</span>
-         <span class='tablet-show'>.tablet-column-4</span></div>
-      <div class="column-1 tablet-column-4 tablet-first-column"><span class='tablet-hide'>1</span>
-         <span class='tablet-show'>.tablet-column-4</span></div>
-      <div class="column-1 tablet-column-4 tablet-first-column"><span class='tablet-hide'>1</span>
-         <span class='tablet-show'>.tablet-column-4</span></div>
+       <div class="column-1 medium-column-4"><span class='medium-hide'>1</span>
+         <span class='medium-show'>.medium-column-4</span></div>
+      <div class="column-1 medium-column-4 medium-first-column"><span class='medium-hide'>1</span>
+         <span class='medium-show'>.medium-column-4</span></div>
+      <div class="column-1 medium-column-4 medium-first-column"><span class='medium-hide'>1</span>
+         <span class='medium-show'>.medium-column-4</span></div>
+      <div class="column-1 medium-column-4 medium-first-column"><span class='medium-hide'>1</span>
+         <span class='medium-show'>.medium-column-4</span></div>
      </div>
 
-    <div class="column-2 tablet-column-4 tablet-last-column phone-first-column"><span class='ablet-hide'>2</span>
-       <span class='tablet-show'>.tablet-column-4</span></div>
+    <div class="column-2 medium-column-4 medium-last-column small-first-column"><span class='ablet-hide'>2</span>
+       <span class='medium-show'>.medium-column-4</span></div>
 
-     <div class="column-10 tablet-column-8 tablet-first-column">
-       <span class='tablet-hide'>10</span>
-       <span class='tablet-show'>.tablet-column-8</span>
-       <div class="column-5 tablet-column-4">
-         <span class='tablet-hide'>.column-5</span>
-         <span class='tablet-show'>.tablet-column-4</span>
+     <div class="column-10 medium-column-8 medium-first-column">
+       <span class='medium-hide'>10</span>
+       <span class='medium-show'>.medium-column-8</span>
+       <div class="column-5 medium-column-4">
+         <span class='medium-hide'>.column-5</span>
+         <span class='medium-show'>.medium-column-4</span>
        </div>
-       <div class="column-5 tablet-column-4 phone-first-column">
-         <span class='tablet-hide'>.column-5</span>
-         <span class='tablet-show'>.tablet-column-4</span>
-         <div class="column-2 tablet-column-4 phone-first-column">
-           <span class='tablet-hide'>2</span>
-           <span class='tablet-show'>.tablet-column-4</span>
+       <div class="column-5 medium-column-4 small-first-column">
+         <span class='medium-hide'>.column-5</span>
+         <span class='medium-show'>.medium-column-4</span>
+         <div class="column-2 medium-column-4 small-first-column">
+           <span class='medium-hide'>2</span>
+           <span class='medium-show'>.medium-column-4</span>
          </div>
-         <div class="column-3 tablet-column-4 tablet-first-column phone-first-column">
-           <span class='tablet-hide'>.column-3</span>
-           <span class='tablet-show'>.tablet-column-4</span>
+         <div class="column-3 medium-column-4 medium-first-column small-first-column">
+           <span class='medium-hide'>.column-3</span>
+           <span class='medium-show'>.medium-column-4</span>
          </div>
 
        </div>
      </div>
 
-    <div class="column-1 tablet-column-4 tablet-first-column"><span class='tablet-hide'>1</span>
-       <span class='tablet-show'>.tablet-column-4</span></div>
-    <div class="column-1 tablet-column-5 tablet-first-column"><span class='tablet-hide'>1</span>
-       <span class='tablet-show'>.tablet-column-5</span></div>
+    <div class="column-1 medium-column-4 medium-first-column"><span class='medium-hide'>1</span>
+       <span class='medium-show'>.medium-column-4</span></div>
+    <div class="column-1 medium-column-5 medium-first-column"><span class='medium-hide'>1</span>
+       <span class='medium-show'>.medium-column-5</span></div>
    </div>
 
-   <div class="column-6 tablet-column-4">
-     <span class='tablet-hide'>.column-6</span>
-     <span class='tablet-show'>.tablet-column-4</span>
+   <div class="column-6 medium-column-4">
+     <span class='medium-hide'>.column-6</span>
+     <span class='medium-show'>.medium-column-4</span>
 
-     <div class="column-6 tablet-column-4">
-       <span class='tablet-hide'>.column-6</span>
-       <span class='tablet-show'>.tablet-column-4</span>
-       <div class="column-4 tablet-column-2"><span class='tablet-hide'>.column-4</span>
-         <span class='tablet-show'>.tablet-column-2</span></div>
-       <div class="column-2 tablet-column-2"><span class='tablet-hide'>2</span>
-         <span class='tablet-show'>.tablet-column-2</span></div>
+     <div class="column-6 medium-column-4">
+       <span class='medium-hide'>.column-6</span>
+       <span class='medium-show'>.medium-column-4</span>
+       <div class="column-4 medium-column-2"><span class='medium-hide'>.column-4</span>
+         <span class='medium-show'>.medium-column-2</span></div>
+       <div class="column-2 medium-column-2"><span class='medium-hide'>2</span>
+         <span class='medium-show'>.medium-column-2</span></div>
      </div>
 
-    <div class="column-4 tablet-column-4 column-first tablet-first-column"><span class='ablet-hide'>.column-4</span>
-       <span class='tablet-show'>.tablet-column-4</span></div>
+    <div class="column-4 medium-column-4 column-first medium-first-column"><span class='ablet-hide'>.column-4</span>
+       <span class='medium-show'>.medium-column-4</span></div>
    </div>
  </div>
 
 
- <div class="container leader-5">
+ <div class="grid-container leader-5">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="using-column-24-as-a-row">Using Column-24 as a Row</h2>
@@ -321,7 +334,7 @@
    </div>
  </div>
 
- <div class="container grid-example leader-1">
+ <div class="grid-container grid-example leader-1">
   <div class="column-2"><span>.column-2 With a lot of content, so it pushes down.</span></div>
    <div class="column-22"><span>.column-22</span></div>
    <div class="column-4"><span>.column-4</span></div>
@@ -330,14 +343,14 @@
 
    <div class="column-24">
     <div class="column-2"><span>.column-2 With a lot of content, so it pushes down.</span></div>
-     <div class="column-22 tablet-first-column"><span>.column-22</span></div>
+     <div class="column-22 medium-first-column"><span>.column-22</span></div>
    </div>
    <div class="column-4"><span>.column-4</span></div>
    <div class="column-4"><span>.column-4</span></div>
    <div class="column-4"><span>.column-4</span></div>
  </div>
 
- <!-- <div class="container leader-5">
+ <!-- <div class="grid-container leader-5">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="nested-columns-with-column-rows">Nested Columns with Column Rows</h2>
@@ -349,7 +362,7 @@
 
  <!-- D E M O -->
 
- <div class="container leader-5">
+ <div class="grid-container leader-5">
    <div class="column-14 pre-3">
      <div class="content-area">
        <h2 id="pre-and-post">Pre and Post</h2>
@@ -360,7 +373,7 @@
    </div>
  </div>
 
- <div class="container grid-example leader-1">
+ <div class="grid-container grid-example leader-1">
    <!-- PRE -->
    <div class="column-24">
      <div class="column-4 pre-2"><span>4 pre-2</span></div>
