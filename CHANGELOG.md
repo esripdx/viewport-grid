@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## 1.0.3 - 2015-08-10
+### Fixes
+- Responsive `.pre-$n` and `.post-$n` classes only apply to their scoped viewport size.
+- Columns with medium column width but no small column render properly
+
+### Changes
+- `column` `pre` and `post` at standard size apply at large size
+
 ## 1.0.2 - 2015-07-21
 ### Fix column mixin
 - Can now call `@include column($n)` from sass to get a properly sized column
