@@ -11,6 +11,26 @@ module.exports = function(grunt) {
       src: ['**']
     },
 
+    'shell': {
+      release: {
+        command: 'npm run release'
+      }
+    },
+
+    'compress': {
+      main: {
+        options: {
+          archive: 'viewport-grid.zip'
+        },
+        files: [
+          {
+            src: ['dist/**', '!dist/__MACOSX'],
+            dest: './'
+          },
+        ]
+      }
+    },
+
     'connect': {
       'static': {
         options: {
@@ -143,4 +163,5 @@ module.exports = function(grunt) {
   // Default grunt task
   grunt.registerTask('default', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'connect', 'watch' ]);
   grunt.registerTask('deploy', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'gh-pages']);
+  grunt.registerTask('release', ['sass', 'cssmin', 'compress', 'shell:release']);
 };
