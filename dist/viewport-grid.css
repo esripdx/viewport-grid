@@ -641,6 +641,24 @@
   .column-24 {
     width: 98vw; }
 
+  .medium-column-1 {
+    width: 16.33333vw; }
+
+  .medium-column-2 {
+    width: 32.66667vw; }
+
+  .medium-column-3 {
+    width: 49vw; }
+
+  .medium-column-4 {
+    width: 65.33333vw; }
+
+  .medium-column-5 {
+    width: 81.66667vw; }
+
+  .medium-column-6 {
+    width: 98vw; }
+
   .medium-column-6 {
     width: 98vw; }
 
