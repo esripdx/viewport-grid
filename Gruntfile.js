@@ -8,7 +8,18 @@ module.exports = function(grunt) {
       options: {
         base: 'site/build'
       },
-      src: ['**']
+
+      'upstream': {
+        options: {
+          repo: 'https://github.com/esripdx/viewport-grid.git'
+        },
+        src: '**/*'
+      },
+
+      'origin': {
+        src: '**/*'
+      }
+
     },
 
     'shell': {
@@ -162,6 +173,9 @@ module.exports = function(grunt) {
 
   // Default grunt task
   grunt.registerTask('default', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'connect', 'watch' ]);
-  grunt.registerTask('deploy', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat', 'gh-pages']);
+  grunt.registerTask('build', ['assemble', 'sass', 'cssmin', 'newer:imagemin', 'concat']);
+  grunt.registerTask('deploy', ['build', 'gh-pages:origin']);
+  grunt.registerTask('deploy-upstream', ['build', 'gh-pages:upstream']);
+
   grunt.registerTask('release', ['sass', 'cssmin', 'compress', 'shell:release']);
 };
